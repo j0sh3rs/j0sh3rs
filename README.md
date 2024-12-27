@@ -1,9 +1,10 @@
 <h1 align="center">👋 Hello! I'm Josh</h1>
-<h3 align="center">I'm a DevOps and Platform Engineer // former EM focused on tooling and optimizing people's time</h3>
-
+<h3 align="center">I'm a DevOps and Platform Engineer // former EM focused on tooling and optimizing people's time, enabling a love of technology, and trying to spread joy.</h3>
+<!-- my-badges start -->
+<!-- my-badges end -->
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=j0sh3rs&label=Profile%20views&color=0e75b6&style=flat" alt="j0sh3rs" /> </p>
 
-- Maintainer of [cfaccess-proxy](https://github.com/j0sh3rs/cfaccess-proxy) and [homelab enthusiast](https://github.com/j0sh3rs/k3s-at-home)
+- Maintainer of [cfaccess-proxy](https://github.com/j0sh3rs/cfaccess-proxy) and [homelab enthusiast](https://github.com/j0sh3rs/home-cluster)
 
 - 👨‍💻 All of my projects are available [in the repositories tab](https://github.com/j0sh3rs?tab=repositories)
 
