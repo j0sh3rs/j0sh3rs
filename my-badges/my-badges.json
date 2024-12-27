@@ -1,0 +1,170 @@
+[
+  {
+    "id": "a-commit",
+    "tier": 1,
+    "desc": "One of my commit sha starts with \"a\".",
+    "body": "- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/aa6edb81804501880295a9bc5f523f058f384b6c\"><strong>a</strong>a6edb81804501880295a9bc5f523f058f384b6c</a>",
+    "image": "https://my-badges.github.io/my-badges/a-commit.png"
+  },
+  {
+    "id": "ab-commit",
+    "tier": 2,
+    "desc": "One of my commit sha starts with \"ab\".",
+    "body": "- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/ab512a20ae2117d9595c50fd07686bba3d700f9b\"><strong>ab</strong>512a20ae2117d9595c50fd07686bba3d700f9b</a>",
+    "image": "https://my-badges.github.io/my-badges/ab-commit.png"
+  },
+  {
+    "id": "bad-words",
+    "tier": 0,
+    "desc": "I used a word \"fuck\" in my commit message.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/cdba79e4de15a8b158091ac0418ba3acf3124108\">cdba79e</a>: Fix up Deployment to bump coredns count, unfuck affinity\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/ebd6d1cf4bd739cb7166e8135a30f9f655885249\">ebd6d1c</a>: fucking secrets\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/090ae66a5719fd8a6cd9bc35d3113f9a07eee075\">090ae66</a>: Fuck youuuuuu\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/a76131e15aea0a3e0def59d78c1b39b05352d920\">a76131e</a>: Fuck it, go back to KPS+T w/ pdc\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/72299fef4c7e9574ac9baec5741783bc02cdeb10\">72299fe</a>: idk fuck it\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/da33de590a7f545c272e04034e552b71d6984685\">da33de5</a>: Fuck it idk\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/8282954a68dce63e275846949dd745a94b03dd51\">8282954</a>: Fuck it\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/be773cb3e1fcb85c4041674ed10e4584073ffa95\">be773cb</a>: Fuckit, lets go\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/6c51f75a3dbf370936c9cb2dbf6333068ec9928f\">6c51f75</a>: Disable it all. Fuck it\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/041749229e191a2f22e497f8126d6d039c591651\">0417492</a>: Fucking DERP\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/a608e61416bd8d8feef29244eb151e181e8d75d7\">a608e61</a>: Fucking fuck fuck\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/83462864888e49de8e5a8b5010e89f64bbd22f6d\">8346286</a>: Probably fucked this up real good",
+    "image": "https://my-badges.github.io/my-badges/bad-words.png"
+  },
+  {
+    "id": "chore-commit",
+    "tier": 0,
+    "desc": "I did a little housekeeping! 🧹",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e0b9d1f9d9e0bba06907131d1a3708cbfbaa6b34\">e0b9d1f</a>: chore(github-action): update flux components to v0.31.0\n\nSigned-off-by: GitHub <noreply@github.com>",
+    "image": "https://my-badges.github.io/my-badges/chore-commit.png"
+  },
+  {
+    "id": "covid-19",
+    "tier": 0,
+    "desc": "I rolled before Covid-19: Survivor of the Great TP Shortage",
+    "body": "",
+    "image": "https://my-badges.github.io/my-badges/covid-19.png"
+  },
+  {
+    "id": "dead-commit",
+    "tier": 0,
+    "desc": "I pushed a commit with \"dead\" once.",
+    "body": "- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/ca7a1bd4582fca905164fa445a9cddead2e7fdcd\">ca7a1bd4582fca905164fa445a9cd<strong>dead</strong>2e7fdcd</a>",
+    "image": "https://my-badges.github.io/my-badges/dead-commit.png"
+  },
+  {
+    "id": "favorite-word",
+    "tier": 0,
+    "desc": "My favorite word is \"update\".",
+    "body": "My favorite commit message words are:\n\n1. update (used 888 times)\n2. merge (used 392 times)\n3. request (used 382 times)\n4. pull (used 381 times)\n5. chore(deps): (used 336 times)",
+    "image": "https://my-badges.github.io/my-badges/favorite-word.png"
+  },
+  {
+    "id": "fix-2",
+    "tier": 1,
+    "desc": "I did 2 sequential fixes.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/315d96b0af559048d3581beffffee81af3bb0a1e\">315d96b</a>: Fixup secrets and cluster backups finally\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/69530ce5980a99051ba6d61154c28d89fa68bb22\">69530ce</a>: Fixup discord notifications",
+    "image": "https://my-badges.github.io/my-badges/fix-2.png"
+  },
+  {
+    "id": "fix-3",
+    "tier": 2,
+    "desc": "I did 3 sequential fixes.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/cfaccess-proxy/commit/8dd72a6dfe2a5f6166f6d58647a9285079fe6cda\">8dd72a6</a>: Fix CodeQL for main branch\n- <a href=\"https://github.com/j0sh3rs/cfaccess-proxy/commit/5641db310786542e9a18c6e46ac259b0aec68a36\">5641db3</a>: Fixup renovate\n- <a href=\"https://github.com/j0sh3rs/cfaccess-proxy/commit/7552dbb622d9c6a1147bb32bde373b5798eec3e6\">7552dbb</a>: Fixup gomod and name",
+    "image": "https://my-badges.github.io/my-badges/fix-3.png"
+  },
+  {
+    "id": "fix-4",
+    "tier": 3,
+    "desc": "I did 4 sequential fixes.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/d2da5f1a0728d3b2fd82c1cc8c7780c45aa35607\">d2da5f1</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/69242260fdb81f82adbc2f356622ae0ad5e65842\">6924226</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/cb24cedb902ab90e189ea51641eacb693e4cabff\">cb24ced</a>: Fixup cert-manager\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/7f96c1b1004c712645bf6828ed7ea3e5c348b36c\">7f96c1b</a>: Fixup netdata",
+    "image": "https://my-badges.github.io/my-badges/fix-4.png"
+  },
+  {
+    "id": "fix-5",
+    "tier": 4,
+    "desc": "I did 5 sequential fixes.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/51e3117ee469c5e1a9f657d47f7d4bda54aa867d\">51e3117</a>: Fixup gitea chart\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/c1fe8f764c64f963b8babcc88898ca7ad4249df3\">c1fe8f7</a>: Fixup gitea chart\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/cf78abfd3f90b42694e4888b02d8e7d36804d34a\">cf78abf</a>: Fixup gitea chart\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/051fe2022ca8af8a3fc498acbf2d2f1484267014\">051fe20</a>: Fixup gitea chart\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/2d6848f577d84eeebe51c9b05f503f13f56aea6c\">2d6848f</a>: Fixup chart",
+    "image": "https://my-badges.github.io/my-badges/fix-5.png"
+  },
+  {
+    "id": "fix-6",
+    "tier": 5,
+    "desc": "I did 6 sequential fixes.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/8a722fdbe8faaa89cb6313e3d87874a32aefe901\">8a722fd</a>: Fixup blocky\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/cf4c97fb256864f5af0cdc32791e2f7b3845f63a\">cf4c97f</a>: Fixup LB IPs on Blocky\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/4f301e232a3c4a44b218f634e727924c7b8b2820\">4f301e2</a>: Fixup blocky\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/469f8cdd44faab2fca76ddf6a59d4d5ec0731757\">469f8cd</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/7b0166f236a3d66afbce390e0dccd34c28875bb8\">7b0166f</a>: Fixup new secret\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/94d82ffba0c51b3a7520f450b2d9965b5e71989a\">94d82ff</a>: Fixup new secret",
+    "image": "https://my-badges.github.io/my-badges/fix-6.png"
+  },
+  {
+    "id": "fix-6+",
+    "tier": 6,
+    "desc": "I did 10 sequential fixes.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/c695b0be8249a2791616f20c4222c815a1b808d7\">c695b0b</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/d4f821dcac1572dcc914f102da9405d1a9a23b1f\">d4f821d</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/593bc9b15bad4eaeb3d66b34f391c6d142ee267d\">593bc9b</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/02d569ea9847ae8414708845768a43e5021e3395\">02d569e</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/977142dbdf31403ac04c94b380f26de12c239f13\">977142d</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/abbd423c7c8c3915d6610c0317c067a025e48410\">abbd423</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/dc8870ffdb967ff99316d86379861d773ee8d038\">dc8870f</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/798a95394a2081b637b7deb2bf2634ac0531693a\">798a953</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/a01e197b30f4f1d2d8d62e90295080aa83b44f3f\">a01e197</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/90db61d54f2de568d11e45175095ab3d3984c1e2\">90db61d</a>: Fixup",
+    "image": "https://my-badges.github.io/my-badges/fix-6+.png"
+  },
+  {
+    "id": "github-anniversary-5",
+    "tier": 0,
+    "desc": "I joined GitHub 5 years ago.",
+    "body": "",
+    "image": "https://my-badges.github.io/my-badges/github-anniversary-5.png"
+  },
+  {
+    "id": "github-anniversary-10",
+    "tier": 0,
+    "desc": "I joined GitHub 10 years ago.",
+    "body": "",
+    "image": "https://my-badges.github.io/my-badges/github-anniversary-10.png"
+  },
+  {
+    "id": "mass-delete-commit",
+    "tier": 1,
+    "desc": "When I delete code, I delete a lot.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/11a6c486f51d6136a239aa5d2098079bf156de6d\">11a6c48</a>",
+    "image": "https://my-badges.github.io/my-badges/mass-delete-commit.png"
+  },
+  {
+    "id": "mass-delete-commit-10k",
+    "tier": 2,
+    "desc": "When I delete code, I delete a lot.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/11a6c486f51d6136a239aa5d2098079bf156de6d\">11a6c48</a>",
+    "image": "https://my-badges.github.io/my-badges/mass-delete-commit-10k.png"
+  },
+  {
+    "id": "polite-coder",
+    "tier": 0,
+    "desc": "I am a polite coder.",
+    "body": "I use words like \"thanks\" and \"please\" in my issues:\n\n- <a href=\"https://github.com/Rafficer/linux-cli-community/issues/230\">#230</a>: [Enhancement] Inclusive vs Exclusive Split Tunneling\n- <a href=\"https://github.com/hibiken/asynq/issues/836\">#836</a>: [GENERAL QUESTION] Status of this project?\n- <a href=\"https://github.com/hashicorp/terraform/issues/14796\">#14796</a>: Cannot Manage Google Cloud DNS NS Records\n- <a href=\"https://github.com/hashicorp/terraform/issues/14808\">#14808</a>: Google Cloud DNS Zone + Record Set Chaining Issue\n- <a href=\"https://github.com/hashicorp/terraform-provider-aws/issues/5905\">#5905</a>: Route53 HealthChecks on Cloudwatch Metrics Conflict on 'period' specification\n\n And many more...",
+    "image": "https://my-badges.github.io/my-badges/polite-coder.png"
+  },
+  {
+    "id": "pr-collaboration-5",
+    "tier": 1,
+    "desc": "I have participated in pull requests with 5 or more people",
+    "body": "Pull requests:\n\n- <a href=\"https://github.com/voxpupuli/puppet-archive/pull/421\">#421</a>: Add initial support for gsutil and pulling from Google Storage buckets",
+    "image": "https://my-badges.github.io/my-badges/pr-collaboration-5.png"
+  },
+  {
+    "id": "public-keys-3",
+    "tier": 3,
+    "desc": "I have three public keys",
+    "body": "",
+    "image": "https://my-badges.github.io/my-badges/public-keys-3.png"
+  },
+  {
+    "id": "spooky-commit",
+    "tier": 0,
+    "desc": "I committed on the Halloween! Boo!",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e7d7a122bfdd91a6d0d82ad476f858f0750c257c\">e7d7a12</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/eeb9e5db53a21df634c481aafde4fed0915232d2\">eeb9e5d</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/f4f536d01132aa14c502cac536452f9ac776faf8\">f4f536d</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/9775d0f551629a84c97f9e27101bf2a3eb062f5a\">9775d0f</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/bcd866e14f7841ead47dc2492fbc0f411e11cf55\">bcd866e</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/bdc563460e7d7c2aece12b98de2f5ab7d4bffb73\">bdc5634</a>",
+    "image": "https://my-badges.github.io/my-badges/spooky-commit.png"
+  },
+  {
+    "id": "self-star",
+    "tier": 0,
+    "desc": "I've starred 1 my own repositories.",
+    "body": "- <a href=\"https://github.com/j0sh3rs/helm-charts\">j0sh3rs/helm-charts</a>",
+    "image": "https://my-badges.github.io/my-badges/self-star.png"
+  },
+  {
+    "id": "evening-commits",
+    "tier": 0,
+    "desc": "I commit in the evening.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/8271300b65ce5e66b2dcab7c9e0b84ff5997b2cb\">8271300</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/d323420c0b093e215bd9424afdb6e446b2a63ae3\">d323420</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/23ca7603fd26082bf394450b7e62c0b3f33856ee\">23ca760</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/4c9519343ce65ec281eec6b0c490ef6c33dd41ea\">4c95193</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/d7cef0b17286a3737bef84f8b79689f5341d70e5\">d7cef0b</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/d759d8d00fa6a4f1fd1a49038d853418627a48ea\">d759d8d</a>",
+    "image": "https://my-badges.github.io/my-badges/evening-commits.png"
+  },
+  {
+    "id": "midnight-commits",
+    "tier": 0,
+    "desc": "I commit at midnight.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/5e3a1caf0ad5d20ed8195af7af2d15ec1ae75849\">5e3a1ca</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/26670e0855b462cf2dda919cc407392c7ac30a8e\">26670e0</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/b3623b85af7709a0064e5ddc00148db3418c7a85\">b3623b8</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/36e95f8b1e66297cb72c9dc6398a69b802bd1fcc\">36e95f8</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/34a2bccb6816af26e1c7f6c2d02761ea1e0ffc21\">34a2bcc</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e4fb06df7043d177a99711fd8dc55e9f92e64bfb\">e4fb06d</a>",
+    "image": "https://my-badges.github.io/my-badges/midnight-commits.png"
+  }
+]
