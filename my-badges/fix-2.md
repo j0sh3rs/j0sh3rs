@@ -4,8 +4,8 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-cluster/commit/315d96b0af559048d3581beffffee81af3bb0a1e">315d96b</a>: Fixup secrets and cluster backups finally
-- <a href="https://github.com/j0sh3rs/home-cluster/commit/69530ce5980a99051ba6d61154c28d89fa68bb22">69530ce</a>: Fixup discord notifications
+- <a href="https://github.com/j0sh3rs/home-cluster/commit/236cbf69c1b78efced87d34a2368836bff6409c5">236cbf6</a>: Fixup vector ref to bjws
+- <a href="https://github.com/j0sh3rs/home-cluster/commit/63d9327549b4aa6ea4bff10416f2b58175590685">63d9327</a>: Fixup vector aggregator
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>

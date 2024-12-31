@@ -45,14 +45,14 @@
     "id": "favorite-word",
     "tier": 0,
     "desc": "My favorite word is \"update\".",
-    "body": "My favorite commit message words are:\n\n1. update (used 888 times)\n2. merge (used 392 times)\n3. request (used 382 times)\n4. pull (used 381 times)\n5. chore(deps): (used 336 times)",
+    "body": "My favorite commit message words are:\n\n1. update (used 889 times)\n2. merge (used 392 times)\n3. request (used 382 times)\n4. pull (used 381 times)\n5. fixup (used 338 times)",
     "image": "https://my-badges.github.io/my-badges/favorite-word.png"
   },
   {
     "id": "fix-2",
     "tier": 1,
     "desc": "I did 2 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/315d96b0af559048d3581beffffee81af3bb0a1e\">315d96b</a>: Fixup secrets and cluster backups finally\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/69530ce5980a99051ba6d61154c28d89fa68bb22\">69530ce</a>: Fixup discord notifications",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/236cbf69c1b78efced87d34a2368836bff6409c5\">236cbf6</a>: Fixup vector ref to bjws\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/63d9327549b4aa6ea4bff10416f2b58175590685\">63d9327</a>: Fixup vector aggregator",
     "image": "https://my-badges.github.io/my-badges/fix-2.png"
   },
   {
