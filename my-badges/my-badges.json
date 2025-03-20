@@ -45,7 +45,7 @@
     "id": "favorite-word",
     "tier": 0,
     "desc": "My favorite word is \"update\".",
-    "body": "My favorite commit message words are:\n\n1. update (used 906 times)\n2. merge (used 403 times)\n3. pull (used 392 times)\n4. request (used 391 times)\n5. fixup (used 342 times)",
+    "body": "My favorite commit message words are:\n\n1. update (used 906 times)\n2. merge (used 403 times)\n3. pull (used 392 times)\n4. request (used 391 times)\n5. fixup (used 343 times)",
     "image": "https://my-badges.github.io/my-badges/favorite-word.png"
   },
   {
@@ -133,13 +133,6 @@
     "image": "https://my-badges.github.io/my-badges/pr-collaboration-5.png"
   },
   {
-    "id": "public-keys-3",
-    "tier": 3,
-    "desc": "I have three public keys",
-    "body": "",
-    "image": "https://my-badges.github.io/my-badges/public-keys-3.png"
-  },
-  {
     "id": "spooky-commit",
     "tier": 0,
     "desc": "I committed on the Halloween! Boo!",
@@ -157,7 +150,7 @@
     "id": "evening-commits",
     "tier": 0,
     "desc": "I commit in the evening.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/a0ad1635e9d634a54098e5b22d8f5c79b55395ff\">a0ad163</a>\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/32bcff5086aa24fbc3d8a2625745a24751bbd38c\">32bcff5</a>\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/e7ae831eceb8e23edf2496fedfc3cea17b982400\">e7ae831</a>\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/4980d81fac24c279f1a9758c6c3d37f4da8867d4\">4980d81</a>\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/fe9d3e9a05264a20e3342bc63a6594ba3a216eba\">fe9d3e9</a>\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/6fd586c02a402b16a0d91398c4a5e386f1fc8cdb\">6fd586c</a>",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/zed_backup/commit/f354612fbc08ea3ff4c612f0bbcddb27a0ad2d49\">f354612</a>\n- <a href=\"https://github.com/j0sh3rs/zed_backup/commit/02d8ccc904acb3fbc7592b0b88ed3d3a0e641577\">02d8ccc</a>\n- <a href=\"https://github.com/j0sh3rs/zed_backup/commit/ec15e5dc9c6967503309aeec25705ab6e9f1785b\">ec15e5d</a>\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/a0ad1635e9d634a54098e5b22d8f5c79b55395ff\">a0ad163</a>\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/32bcff5086aa24fbc3d8a2625745a24751bbd38c\">32bcff5</a>\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/e7ae831eceb8e23edf2496fedfc3cea17b982400\">e7ae831</a>",
     "image": "https://my-badges.github.io/my-badges/evening-commits.png"
   },
   {
@@ -173,5 +166,12 @@
     "desc": "I committed on Friday the 13th, One… By One…",
     "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/j0sh3rs/commit/bf6ed90cbda47569e42721186953c53490d277e9\">bf6ed90</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/5e1865395cd1828db36a2ecf20f0f9bae022afa2\">5e18653</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/8169e2fa70f6b44cf74a9fec2f2a837ba213033e\">8169e2f</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e5c47866a0d1241882078a832ee735ce492f0d80\">e5c4786</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/21f5399704eb49426e3c781190b8a4ac5b885087\">21f5399</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/514e43fe8af4ebf945a4f19c748da90f889cee38\">514e43f</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/283cee4cf0f980327b6e40eec1b3729dd00a395b\">283cee4</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/661966aafbcfbb4a74217f6cc024e8c0474f1725\">661966a</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/02fa4035ec81989d4b06345bc35ed4737d2f879c\">02fa403</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/111e6e471d5dbfe3b2cdcd96db3a2c877d29e4fb\">111e6e4</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e196d35793dd96b3d1a6a73ec13c363df5041d15\">e196d35</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/9201264e68f7f1dc49fe5d2e59ed0ac787bc60a1\">9201264</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/29793c718b5fca157a8000985d767b3ffa03f566\">29793c7</a>",
     "image": "https://my-badges.github.io/my-badges/friday-13.png"
+  },
+  {
+    "id": "public-keys-2",
+    "tier": 2,
+    "desc": "I have two public keys",
+    "body": "",
+    "image": "https://my-badges.github.io/my-badges/public-keys-2.png"
   }
 ]
