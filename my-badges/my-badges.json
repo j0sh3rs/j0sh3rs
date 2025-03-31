@@ -45,14 +45,14 @@
     "id": "favorite-word",
     "tier": 0,
     "desc": "My favorite word is \"update\".",
-    "body": "My favorite commit message words are:\n\n1. update (used 909 times)\n2. merge (used 404 times)\n3. pull (used 393 times)\n4. request (used 392 times)\n5. fixup (used 344 times)",
+    "body": "My favorite commit message words are:\n\n1. update (used 911 times)\n2. merge (used 405 times)\n3. pull (used 394 times)\n4. request (used 393 times)\n5. fixup (used 346 times)",
     "image": "https://my-badges.github.io/my-badges/favorite-word.png"
   },
   {
     "id": "fix-2",
     "tier": 1,
     "desc": "I did 2 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/236cbf69c1b78efced87d34a2368836bff6409c5\">236cbf6</a>: Fixup vector ref to bjws\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/63d9327549b4aa6ea4bff10416f2b58175590685\">63d9327</a>: Fixup vector aggregator",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/9412184719f80c33be9f9f7d613aca0610da004b\">9412184</a>: FIxup tunnel id\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/782f836826f85fd29ee79dee59a0725022076647\">782f836</a>: Fixup unifi helmrelease",
     "image": "https://my-badges.github.io/my-badges/fix-2.png"
   },
   {
@@ -150,7 +150,7 @@
     "id": "evening-commits",
     "tier": 0,
     "desc": "I commit in the evening.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/zed_backup/commit/f354612fbc08ea3ff4c612f0bbcddb27a0ad2d49\">f354612</a>\n- <a href=\"https://github.com/j0sh3rs/zed_backup/commit/02d8ccc904acb3fbc7592b0b88ed3d3a0e641577\">02d8ccc</a>\n- <a href=\"https://github.com/j0sh3rs/zed_backup/commit/ec15e5dc9c6967503309aeec25705ab6e9f1785b\">ec15e5d</a>\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/a0ad1635e9d634a54098e5b22d8f5c79b55395ff\">a0ad163</a>\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/32bcff5086aa24fbc3d8a2625745a24751bbd38c\">32bcff5</a>\n- <a href=\"https://github.com/j0sh3rs/airprint-proxy/commit/e7ae831eceb8e23edf2496fedfc3cea17b982400\">e7ae831</a>",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/4fbf8137a8fde0eb9af8e8ef42bd94e5d299f29a\">4fbf813</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/9412184719f80c33be9f9f7d613aca0610da004b\">9412184</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/782f836826f85fd29ee79dee59a0725022076647\">782f836</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/ec1160082cf87d6107d0c7ca38ed826dd39c14fc\">ec11600</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/541f458330e9b92d4bc3dbda975b780b60e8fb0c\">541f458</a>\n- <a href=\"https://github.com/j0sh3rs/zed_backup/commit/f354612fbc08ea3ff4c612f0bbcddb27a0ad2d49\">f354612</a>",
     "image": "https://my-badges.github.io/my-badges/evening-commits.png"
   },
   {
