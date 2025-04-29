@@ -4,9 +4,7 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/e0b9d1f9d9e0bba06907131d1a3708cbfbaa6b34">e0b9d1f</a>: chore(github-action): update flux components to v0.31.0
-
-Signed-off-by: GitHub <noreply@github.com>
+- <a href="https://github.com/j0sh3rs/home-ops/commit/d364c4cee6dc2fa6ca3343b1a0746d32f094812b">d364c4c</a>: chore(mise): upgrade dependencies (#36)
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
