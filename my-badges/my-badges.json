@@ -24,7 +24,7 @@
     "id": "chore-commit",
     "tier": 0,
     "desc": "I did a little housekeeping! 🧹",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/d364c4cee6dc2fa6ca3343b1a0746d32f094812b\">d364c4c</a>: chore(mise): upgrade dependencies (#36)",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c6c3e10d250ee4abe7401030a94b0c327b83d92b\">c6c3e10</a>: chore(mise): upgrade dependencies (#54)",
     "image": "https://my-badges.github.io/my-badges/chore-commit.png"
   },
   {
@@ -45,7 +45,7 @@
     "id": "favorite-word",
     "tier": 0,
     "desc": "My favorite word is \"update\".",
-    "body": "My favorite commit message words are:\n\n1. update (used 915 times)\n2. merge (used 413 times)\n3. pull (used 402 times)\n4. request (used 401 times)\n5. fixup (used 346 times)",
+    "body": "My favorite commit message words are:\n\n1. update (used 915 times)\n2. merge (used 414 times)\n3. pull (used 403 times)\n4. request (used 402 times)\n5. fixup (used 346 times)",
     "image": "https://my-badges.github.io/my-badges/favorite-word.png"
   },
   {
