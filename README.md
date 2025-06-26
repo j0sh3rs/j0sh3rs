@@ -26,6 +26,7 @@
 <a href="my-badges/midnight-commits.md"><img src="https://my-badges.github.io/my-badges/midnight-commits.png" alt="I commit at midnight." title="I commit at midnight." width="64"></a>
 <a href="my-badges/friday-13.md"><img src="https://my-badges.github.io/my-badges/friday-13.png" alt="I committed on Friday the 13th, One… By One…" title="I committed on Friday the 13th, One… By One…" width="64"></a>
 <a href="my-badges/public-keys-2.md"><img src="https://my-badges.github.io/my-badges/public-keys-2.png" alt="I have two public keys" title="I have two public keys" width="64"></a>
+<a href="my-badges/summer-solstice-commits.md"><img src="https://my-badges.github.io/my-badges/summer-solstice-commits.png" alt="I commit in the Summer solstice." title="I commit in the Summer solstice." width="64"></a>
 <!-- my-badges end -->
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=j0sh3rs&label=Profile%20views&color=0e75b6&style=flat" alt="j0sh3rs" /> </p>
 
