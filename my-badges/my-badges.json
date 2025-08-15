@@ -140,13 +140,6 @@
     "image": "https://my-badges.github.io/my-badges/spooky-commit.png"
   },
   {
-    "id": "self-star",
-    "tier": 0,
-    "desc": "I've starred 1 my own repositories.",
-    "body": "- <a href=\"https://github.com/j0sh3rs/helm-charts\">j0sh3rs/helm-charts</a>",
-    "image": "https://my-badges.github.io/my-badges/self-star.png"
-  },
-  {
     "id": "evening-commits",
     "tier": 0,
     "desc": "I commit in the evening.",
