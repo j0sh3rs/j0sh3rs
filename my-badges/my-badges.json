@@ -175,13 +175,6 @@
     "image": "https://my-badges.github.io/my-badges/summer-solstice-commits.png"
   },
   {
-    "id": "self-star",
-    "tier": 0,
-    "desc": "I've starred 1 my own repositories.",
-    "body": "- <a href=\"https://github.com/j0sh3rs/helm-charts\">j0sh3rs/helm-charts</a>",
-    "image": "https://my-badges.github.io/my-badges/self-star.png"
-  },
-  {
     "id": "programmers-day",
     "tier": 0,
     "desc": "Happy Programmers Day! I committed on a 256 Day of Year!",
