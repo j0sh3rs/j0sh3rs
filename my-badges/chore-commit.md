@@ -4,7 +4,7 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/c1dfea8387b5dbecdaeca511bfcac612597df90c">c1dfea8</a>: chore(mise): upgrade dependencies (#222)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/509abd8bfce9857b8b5f24065f231bfd16c87b89">509abd8</a>: chore(mise): upgrade dependencies (#230)
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
