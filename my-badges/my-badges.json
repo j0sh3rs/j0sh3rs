@@ -184,7 +184,7 @@
   {
     "id": "may-the-4th",
     "tier": 0,
-    "desc": "May the 4th be with you! Commits of force:",
+    "desc": "May the 4th be with you!",
     "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/88ee15e0d55e69d08d27f8b0a8b037c21d5b69ed\">88ee15e</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/d78a8fff6d3d8097d732e62baee07f962d006793\">d78a8ff</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/ad083561182904c8ec9a3be1102ceb490648764a\">ad08356</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/83f5c73d20867aa80626929a41b62d03e6ec22c2\">83f5c73</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/5eaa96fb42d1e63efd1e9b1a0ebf96068b452643\">5eaa96f</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/a10507e77a2c72f949e7bf3d1d01baf9df551a5a\">a10507e</a>",
     "image": "https://my-badges.github.io/my-badges/may-the-4th.png"
   },
@@ -194,5 +194,19 @@
     "desc": "Happy March 14th! I committed on a Pi Day!",
     "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/1d30be6689bb330a569c2206417407ae58f16f83\">1d30be6</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/580b63f2bacbd35547b85d39ad5731554a5fded2\">580b63f</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/2ab224351ff3b8ba9cc72e402a30f66ed3646bfb\">2ab2243</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/56f35fdfa4494a08ab66f3143f1e1e3681ab51e7\">56f35fd</a>",
     "image": "https://my-badges.github.io/my-badges/pi-day.png"
+  },
+  {
+    "id": "alien-day",
+    "tier": 0,
+    "desc": "I committed on the day when the crew of the USCSS Nostromo made their fateful landing and discovered the Xenomorph on LV-426!",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/zed_backup/commit/6f1fcb65fef7a56720e1bfb1788a381497a695ea\">6f1fcb6</a>\n- <a href=\"https://github.com/j0sh3rs/zed_backup/commit/b8871740d37c73ca3bed68958b1927910955f5f7\">b887174</a>\n- <a href=\"https://github.com/j0sh3rs/control-repo/commit/08bb46bc5bac199466014b89298bfd4dffd1b873\">08bb46b</a>\n- <a href=\"https://github.com/j0sh3rs/control-repo/commit/5a8e05641d65b375c0cd9210c2fb1613679f2d10\">5a8e056</a>\n- <a href=\"https://github.com/j0sh3rs/control-repo/commit/b33749be9f9df6a745e1198ed99ba2c472c7cb22\">b33749b</a>\n- <a href=\"https://github.com/j0sh3rs/control-repo/commit/eb209cd4bbc171e72b826d392e65746fee348536\">eb209cd</a>",
+    "image": "https://my-badges.github.io/my-badges/alien-day.png"
+  },
+  {
+    "id": "science-fiction-day",
+    "tier": 0,
+    "desc": "I committed on Isaac Asimov's birthday / National Science Fiction Day!",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/2c4900d8b415c7347bff2470e7d1181a310beb2a\">2c4900d</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e1c24d0bc96adfae77da7af9c9f9162568679efd\">e1c24d0</a>",
+    "image": "https://my-badges.github.io/my-badges/science-fiction-day.png"
   }
 ]
