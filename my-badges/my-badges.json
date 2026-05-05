@@ -143,7 +143,7 @@
     "id": "evening-commits",
     "tier": 0,
     "desc": "I commit in the evening.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c764792e3b5e7382c713dbb386b08d483ba33b6a\">c764792</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/337c5d8925ec1e861c44570feffcbea53d229b25\">337c5d8</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/4fbf8137a8fde0eb9af8e8ef42bd94e5d299f29a\">4fbf813</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/9412184719f80c33be9f9f7d613aca0610da004b\">9412184</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/782f836826f85fd29ee79dee59a0725022076647\">782f836</a>\n- <a href=\"https://github.com/j0sh3rs/home-cluster/commit/ec1160082cf87d6107d0c7ca38ed826dd39c14fc\">ec11600</a>",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/5a77dc90f14372e44be04ba0d4e3a83d13bfecb4\">5a77dc9</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/7c4f3d3a60da6c42bebb9d575883e7a1df0757c9\">7c4f3d3</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/bbcb6bfba4e8849064a04b9d5f981b7161459e0c\">bbcb6bf</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/058248fdd02ab07a14c539d65b537252a44f2848\">058248f</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c764792e3b5e7382c713dbb386b08d483ba33b6a\">c764792</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/337c5d8925ec1e861c44570feffcbea53d229b25\">337c5d8</a>",
     "image": "https://my-badges.github.io/my-badges/evening-commits.png"
   },
   {
@@ -185,7 +185,7 @@
     "id": "may-the-4th",
     "tier": 0,
     "desc": "May the 4th be with you!",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/88ee15e0d55e69d08d27f8b0a8b037c21d5b69ed\">88ee15e</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/d78a8fff6d3d8097d732e62baee07f962d006793\">d78a8ff</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/ad083561182904c8ec9a3be1102ceb490648764a\">ad08356</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/83f5c73d20867aa80626929a41b62d03e6ec22c2\">83f5c73</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/5eaa96fb42d1e63efd1e9b1a0ebf96068b452643\">5eaa96f</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/a10507e77a2c72f949e7bf3d1d01baf9df551a5a\">a10507e</a>",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/5a77dc90f14372e44be04ba0d4e3a83d13bfecb4\">5a77dc9</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/7c4f3d3a60da6c42bebb9d575883e7a1df0757c9\">7c4f3d3</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/bbcb6bfba4e8849064a04b9d5f981b7161459e0c\">bbcb6bf</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/058248fdd02ab07a14c539d65b537252a44f2848\">058248f</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/af9b845db79eec70f46e9d076b8adeee57cef873\">af9b845</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/ae921d57669cf4fb29617ed4020816d0d6058fda\">ae921d5</a>",
     "image": "https://my-badges.github.io/my-badges/may-the-4th.png"
   },
   {
@@ -215,5 +215,12 @@
     "desc": "I pushed a commit with \"cafe\" once.",
     "body": "- <a href=\"https://github.com/j0sh3rs/home-ops/commit/11f14332e8148eff8b08cf7e075dd746fcafe68c\">11f14332e8148eff8b08cf7e075dd746f<strong>cafe</strong>68c</a>",
     "image": "https://my-badges.github.io/my-badges/cafe-commit.png"
+  },
+  {
+    "id": "epic-commit",
+    "tier": 0,
+    "desc": "I made an epic commit with a message over 500 chars.",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/5a77dc90f14372e44be04ba0d4e3a83d13bfecb4\">5a77dc9</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/7c4f3d3a60da6c42bebb9d575883e7a1df0757c9\">7c4f3d3</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/bbcb6bfba4e8849064a04b9d5f981b7161459e0c\">bbcb6bf</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/058248fdd02ab07a14c539d65b537252a44f2848\">058248f</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/af9b845db79eec70f46e9d076b8adeee57cef873\">af9b845</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/ae921d57669cf4fb29617ed4020816d0d6058fda\">ae921d5</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/2c944167ca43ea32006a68bd46794298f7c0da11\">2c94416</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/e2fa06b7f035a51e89fe651623d73b6c88d03109\">e2fa06b</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9c0e13db4edf574e303f1e722de0f0a143ded92e\">9c0e13d</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/d86aed7ae29e91396ad7882391858281b51fbf1a\">d86aed7</a>",
+    "image": "https://my-badges.github.io/my-badges/epic-commit.png"
   }
 ]
