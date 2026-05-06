@@ -6,8 +6,8 @@ My favorite commit message words are:
 
 1. update (used 913 times)
 2. merge (used 415 times)
-3. pull (used 404 times)
-4. request (used 403 times)
+3. request (used 405 times)
+4. pull (used 404 times)
 5. fixup (used 346 times)
 
 

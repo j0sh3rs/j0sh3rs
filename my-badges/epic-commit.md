@@ -4,6 +4,8 @@
 
 Commits:
 
+- <a href="https://github.com/j0sh3rs/home-ops/commit/629cbc5d287f7d70282e41f9137364f97dd55bf8">629cbc5</a>
+- <a href="https://github.com/j0sh3rs/home-ops/commit/76f7999502b7c4e8dbdf7d09183d2192519b84d5">76f7999</a>
 - <a href="https://github.com/j0sh3rs/home-ops/commit/5a77dc90f14372e44be04ba0d4e3a83d13bfecb4">5a77dc9</a>
 - <a href="https://github.com/j0sh3rs/home-ops/commit/7c4f3d3a60da6c42bebb9d575883e7a1df0757c9">7c4f3d3</a>
 - <a href="https://github.com/j0sh3rs/home-ops/commit/bbcb6bfba4e8849064a04b9d5f981b7161459e0c">bbcb6bf</a>
