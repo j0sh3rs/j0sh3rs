@@ -4,26 +4,47 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/49b3407a57fe5e980d54e2489274b81b7e4209a0">49b3407</a>: fix(security): update Authentik HelmRelease for chart 2026.5 (global.envFrom, drop redis subchart) (#378)
-- <a href="https://github.com/j0sh3rs/home-ops/commit/145ac122eb5e0ff779b1c2a265287dbffbb3f67f">145ac12</a>: fix(security): update Authentik HelmRelease for chart 2026.5 (global.envFrom, drop redis subchart) (#376)
-- <a href="https://github.com/j0sh3rs/home-ops/commit/6706e1dcc6a3776a1512f91eb192d07999113990">6706e1d</a>: fix(security): correct Authentik OCI chart URL (helm-charts not helm) (#375)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/01fd483a56deefb57c03e334943de829d7a9a340">01fd483</a>: fix(security): set AUTHENTIK_COOKIE_DOMAIN, add X-authentik-entitlements header (#385)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/cbb6f18a4ca6d95f6c9c36837a9ba720999fdb38">cbb6f18</a>: fix(security): add AUTHENTIK_AUTHENTIK__DOMAIN env var to fix outpost redirect URL (#384)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/81ed60aaad0dd61a1d80f28f4911048f73c30bd5">81ed60a</a>: fix(network): raise rate limit burst for Authentik SPA + WebSocket (200 burst, depth 1) (#383)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/a41ed0144dffb7146a84bbe3ef3f671bb98d1cf6">a41ed01</a>: fix(databases): move serverName off ObjectStore + add kubectl-cnpg (#382)
 
-Co-authored-by: joshAtRula <josh.simmonds@rula.com>
-- <a href="https://github.com/j0sh3rs/home-ops/commit/78b68834b255d1d197253f47bf50a4729d36b4ef">78b6883</a>: fix(ai): unauthenticated /metrics on litellm + import upstream grafana dashboard (#374)
+Two issues post-merge of barman plugin migration (#381):
 
-LiteLLM v1.85+ defaults require_auth_for_metrics_endpoint=true, which
-bounces vmagent's anonymous scrape with 401. Set
-litellm_settings.require_auth_for_metrics_endpoint: false in the
-proxy_config ConfigMap. /metrics is on a ClusterIP-only Service (no
-external exposure) and only carries usage stats. /v1/* endpoints stay
-auth-on.
+1. Flux ks 'cloudnative-pg-cluster' stuck in dry-run-failed loop:
+   ObjectStore.spec.configuration.serverName: Forbidden: use the
+   'serverName' plugin parameter in the Cluster resource
 
-Also import the upstream LiteLLM Prod v2 Grafana dashboard
-(BerriAI/litellm@main, 22 KB, 10 panels) as a ConfigMap-generated
-GrafanaDashboard CR, matching the tetragon / amd-gpu / dragonflydb
-pattern.
+   The plugin's webhook rejects serverName at the ObjectStore level —
+   it lives on Cluster.spec.plugins[].parameters.serverName instead.
+   Fix: drop serverName from both ObjectStore CRs (postgres17-v3 and
+   postgres17-v4); add serverName to the Cluster's plugin parameters
+   for both the live cluster (postgres17-v4) and the recovery source
+   (postgres17-v3 in externalClusters).
 
-Co-authored-by: joshAtRula <josh.simmonds@rula.com>
+   Same S3 path semantics: plugin reads/writes
+   s3://cloudnative-pg/postgres17-v4/ as before. The ObjectStore now
+   carries only the S3 location + creds + retention; per-cluster
+   path differentiation is the cluster's job. This shape is what the
+   official cluster-example.yaml in cnpg/plugin-barman-cloud demos.
+
+   Live cluster's in-tree spec.backup.barmanObjectStore is still
+   active because Flux never applied the new cluster17.yaml — backups
+   continued working throughout the partial-merge state.
+
+2. 'kubectl cnpg' command not found locally.
+
+   Add kubectl-cnpg CLI plugin via mise/aqua:
+     aqua:cloudnative-pg/cloudnative-pg/kubectl-cnpg = 1.29.1
+
+   Tracks cnpg operator chart version (currently 1.29.1). Renovate
+   auto-bump silently no-ops on this entry due to a 3-segment vs
+   2-segment depName mismatch (aqua identifier has the binary name as
+   third segment; GitHub repo is 2 segments). Documented inline.
+   Bump manually alongside the cnpg operator HelmRelease.
+
+Server-side dry-run with --field-manager=kustomize-controller now
+clean for the cluster CR + both ObjectStore CRs.
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
