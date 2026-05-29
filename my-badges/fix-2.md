@@ -4,43 +4,23 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/62e760b7f1ec0590acf06cafda0ea230baff8b96">62e760b</a>: fix(databases): use home-ops/role label for dragonfly metrics svc/SM selector (#369)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/f758e4cda3ef487438ddd0e9e55f6218f7708586">f758e4c</a>: fix(services): paperless route backendRef service name
 
-Flux's parent Kustomization at kubernetes/apps/databases/dragonflydb/ks.yaml
-injects `commonMetadata.labels` cluster-wide, including
-`app.kubernetes.io/name: dragonflydb-instance`. That OVERWRITES the
-`app.kubernetes.io/name: dragonfly-metrics` we set on the metrics Service,
-so the ServiceMonitor's `selector.matchLabels` finds zero Services.
-Symptom: vmagent target reports `(0/0 up)` despite Service + EndpointSlice
-being healthy.
+app-template names services <app>-<controller>. The controller is
+named 'paperless' so the service is 'paperless-app', not 'paperless'.
+*app anchor resolved to 'paperless' which doesn't exist, causing
+ResolvedRefs: False on the HTTPRoute.
+- <a href="https://github.com/j0sh3rs/home-ops/commit/c9178672f6a852c051a0e74c92dabf9758aaa7d6">c917867</a>: fix(services): paperless Redis URL — move to secret, drop broken $(VAR) expansion
 
-Switch to a distinct `home-ops/role: dragonfly-metrics` label that Flux
-won't clobber. Both the Service and ServiceMonitor use it.
+Kubernetes only substitutes $(VAR) in env values when the source var
+uses plain value:, not valueFrom: secretKeyRef. DRAGONFLYDB_PASSWORD
+used valueFrom, so $(DRAGONFLYDB_PASSWORD) was passed verbatim to the
+container. Python's URL parser then tried to parse '807jXKr' as a port.
 
-Verified live: pre-fix `kubectl get svc -l app.kubernetes.io/name=dragonfly-metrics`
-returned 0 Services. Post-fix the SM selector matches via the unique label.
-
-Co-authored-by: joshAtRula <josh.simmonds@rula.com>
-- <a href="https://github.com/j0sh3rs/home-ops/commit/51a20e7d67b42376ed2602dca9577910546a8c72">51a20e7</a>: fix(databases): allow vmagent to scrape dragonfly admin port (9999) (#368)
-
-The dragonfly operator auto-creates a NetworkPolicy that locks port
-9999 to operator + peer pods only. After the StatefulSet recreate
-(needed for the snapshot PVC to land), vmagent silently lost its
-scrape — same restriction was always there but the original audit
-missed it because metrics had been flowing pre-restart for an
-unrelated reason (operator CR's serviceMonitor: enabled was scraping
-the OPERATOR's metrics, not dragonfly itself).
-
-Add a sibling NetworkPolicy in `databases` that allows
-`monitoring/vmagent` → `:9999`. NetworkPolicy ingress rules are
-additive, so the operator's lockdown remains for everything else.
-
-Verified vmagent reaches the pod IP after this lands; before the
-fix `wget --timeout=5 http://<pod-ip>:9999/metrics` from inside the
-vmagent container hangs. After the fix metrics flow within ~30s
-via vmagent's normal scrape interval.
-
-Co-authored-by: joshAtRula <josh.simmonds@rula.com>
+Fix: pre-build the full Redis URL with URL-encoded password in
+paperless-secrets and let envFrom inject PAPERLESS_REDIS directly.
+Remove PAPERLESS_REDIS and DRAGONFLYDB_PASSWORD from the helmrelease
+env block entirely. DB /2 selector preserved in the URL.
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
