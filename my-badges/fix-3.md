@@ -4,17 +4,38 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/81cd538356cbfe4f771f6c3d47726fbc38e7cc42">81cd538</a>: fix(security): migrate crowdsec-db-pvc to openebs-hostpath
+- <a href="https://github.com/j0sh3rs/home-ops/commit/d051bcbefb1330c076bd91548ff494c636407106">d051bcb</a>: fix(monitoring): tune GPU thermal thresholds from load-verified data
 
-SQLite on NFS (nfs-client) causes WAL lock contention when agents and
-LAPI read/write concurrently, resulting in "database is locked" errors
-and 403s to bouncers (CrowdSecBouncerNotConnected alert).
+Idle: 27-29C. Sustained inference (1.5B Q4_K_M, 20-parallel, Vulkan): 53C
+peak, 161W. Navi 21 throttle at ~100C edge.
 
-openebs-hostpath provides local NVMe I/O; LAPI is single-replica with
-Recreate strategy, so node-pinning is acceptable. Config PVC stays on
-nfs-client (read-mostly, survives reschedule).
-- <a href="https://github.com/j0sh3rs/home-ops/commit/7986dde84d978b5bb529039d38f8905b7a8c6439">7986dde</a>: fix(n8n): Disable user management since gated by SSO
-- <a href="https://github.com/j0sh3rs/home-ops/commit/60bee1e62900dd05daf441bf5ee257daf7ea0d0f">60bee1e</a>: fix(ai): correct LiteLLM OIDC endpoints — remove app-slug from path
+Warn: 90C -> 75C (22C above load peak)
+Crit: 100C -> 90C (pre-throttle, 37C headroom above load peak)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/b76b26f176aa6115e89a74f6f5ab891aa8e5e7de">b76b26f</a>: fix(monitoring): use real gpu power metric, drop dead junction alert
+
+Live exporter on bigboi (Navi 21 / RX 6900 XT) confirmed amd_gpu_package_power
+is empty on this consumer card; it reports amd_gpu_average_package_power instead
+(idle ~60W). Point GPUPackagePowerHigh at the metric that actually exists.
+
+Drop GPUJunctionTemperatureCritical: amd_gpu_junction_temperature is gated to
+Instinct card_models in the exporter and the 6900 XT reports card_model="", so
+the metric never populates and the alert was permanently dead. Edge temperature
+is the authoritative thermal signal for this card (verified idle 27C).
+- <a href="https://github.com/j0sh3rs/home-ops/commit/3a8f9e8abb9bf206f50c220171ef80c833bf2b4b">3a8f9e8</a>: fix(monitoring): target amd gpu exporter at dgpu node + add gpu alerts
+
+amd-device-metrics-exporter was scheduled via nodeSelector amd.com/gpu.family=RV,
+landing on the three bee APU nodes where the bundled gpuagent cannot reach the
+integrated GPU (gpuagent.sock connection refused, ~11400 consecutive failures;
+/metrics served only promhttp internals). amd-smi does not enumerate the
+Raven/Cezanne iGPUs. Retarget to node.kubernetes.io/gpu-tier=dgpu so the
+DaemonSet runs only on bigboi-jms-01 (Navi 21 / RX 6900 XT), the one node amd-smi
+supports, and the three dead bee pods are removed.
+
+Add a gpu PrometheusRule group (edge temp high/critical, junction temp critical,
+package power high, exporter-down). Metric names and label set (hostname, not the
+kube node label) verified against the bundled AMD dashboards. Edge temperature is
+the critical path because junction temp is gated to Instinct card models in the
+exporter and the 6900 XT is a consumer card.
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
