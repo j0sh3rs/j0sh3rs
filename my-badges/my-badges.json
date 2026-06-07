@@ -45,14 +45,14 @@
     "id": "favorite-word",
     "tier": 0,
     "desc": "My favorite word is \"update\".",
-    "body": "My favorite commit message words are:\n\n1. update (used 939 times)\n2. merge (used 415 times)\n3. request (used 405 times)\n4. pull (used 404 times)\n5. add (used 360 times)",
+    "body": "My favorite commit message words are:\n\n1. update (used 940 times)\n2. merge (used 415 times)\n3. request (used 405 times)\n4. pull (used 404 times)\n5. add (used 362 times)",
     "image": "https://my-badges.github.io/my-badges/favorite-word.png"
   },
   {
     "id": "fix-2",
     "tier": 1,
     "desc": "I did 2 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/6571582c664e5724a4fc1b4009ed07702138fb41\">6571582</a>: fix(ai): wyoming STT image + tune vmsingle/HA query load\n\n- faster-whisper: swap fedirz/faster-whisper-server (OpenAI HTTP, no\n  Wyoming) for rhasspy/wyoming-whisper:3.1.0 — real Wyoming TCP server\n  on :10300 that HA's Wyoming integration can actually connect to.\n  Drop dead :8000 http port; remount PVC at /data.\n- vmsingle: raise search.maxConcurrentRequests 16->24, maxQueueDuration\n  10s->30s to stop 429-flooding query clients.\n- home-assistant: back off cluster REST sensors 30/60s->120s, add\n  value_json guards + 25s timeout to kill the 429-driven template-error\n  spam.\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/b8ad4f48e3e1fe375d503499c7622d9861fd1b2b\">b8ad4f4</a>: fix(ai): use chart structured auth (CUSTOM provider) for langfuse OIDC — additionalEnv AUTH_* duplicated chart-emitted keys",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c3137598bc76c107a5cfea30c3a0a93fe33595be\">c313759</a>: fix(renovate): Add renovate tags to proper k8tz upstream, add gh override for token usage\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/adeacca75619e25324adaefdc92a48567c66fad6\">adeacca</a>: fix(mirrors): Update removed mirrors to native oci, or direct upstream for better uptaking",
     "image": "https://my-badges.github.io/my-badges/fix-2.png"
   },
   {
