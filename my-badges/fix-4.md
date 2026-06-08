@@ -4,10 +4,27 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/7e21c0043dade65fc7939a98f68858678ff2eb0e">7e21c00</a>: fix(databases): move clickhouse OCIRepository to flux/meta/repos (flux-system ns)
-- <a href="https://github.com/j0sh3rs/home-ops/commit/a74bd5b592c37dfc57efaf63d21e3d3d9ddb55c4">a74bd5b</a>: fix(ai): remove langfuse redis structured block — conflicts with additionalEnv REDIS_CONNECTION_STRING
-- <a href="https://github.com/j0sh3rs/home-ops/commit/c63564da907e559ea9c7fdae9931e36ddca28fab">c63564d</a>: fix(ai): remove --piper flag from wyoming-piper args (removed in 2.x)
-- <a href="https://github.com/j0sh3rs/home-ops/commit/bcf8797e104f18ab8bd2e0541f11c9019d3c14b6">bcf8797</a>: fix(databases): use grafanaCom pattern for ClickHouse dashboard (ID 14192 rev 4)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/ecc048b7dc734ee9a6fe22c19a270b17e255d49b">ecc048b</a>: fix(renovate): group traefik chart + image, disable automerge
+
+Chart 40.x gates the proxy image version via requirements.yaml; independent
+auto-merge of the image bump breaks HelmRelease reconciliation. Grouping
+both under matchPackageNames ["/traefik/"] ensures chart + image land in the
+same PR, reviewed manually before merge.
+- <a href="https://github.com/j0sh3rs/home-ops/commit/be18cedbcd33c21b418f5961cbbaccc4fd6fadaf">be18ced</a>: fix(network): downgrade traefik image to v3.7.1, fix victoria-logs syslog port conflict
+
+Chart traefik@40.2.0 caps Traefik Proxy at v3.7.1 via requirements.yaml gate;
+both traefik-external and traefik-internal were pinned to v3.7.4 causing
+HelmRelease upgrade failures.
+
+victoria-logs-single@0.13.x auto-adds syslog service ports when
+syslog.listenAddr.tcp/udp args are set; manual extraPorts for port 514
+(TCP+UDP) produced duplicate key errors in server-side apply.
+
+Also deleted orphaned kube-system/vector Kustomization (no repo path,
+depends on non-existent flux-system/helm-repos; vector runs as
+victoria-logs-vector under victoria-logs chart).
+- <a href="https://github.com/j0sh3rs/home-ops/commit/c3137598bc76c107a5cfea30c3a0a93fe33595be">c313759</a>: fix(renovate): Add renovate tags to proper k8tz upstream, add gh override for token usage
+- <a href="https://github.com/j0sh3rs/home-ops/commit/adeacca75619e25324adaefdc92a48567c66fad6">adeacca</a>: fix(mirrors): Update removed mirrors to native oci, or direct upstream for better uptaking
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
