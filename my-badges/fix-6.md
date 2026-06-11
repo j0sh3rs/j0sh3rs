@@ -4,12 +4,12 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/8a722fdbe8faaa89cb6313e3d87874a32aefe901">8a722fd</a>: Fixup blocky
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/cf4c97fb256864f5af0cdc32791e2f7b3845f63a">cf4c97f</a>: Fixup LB IPs on Blocky
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/4f301e232a3c4a44b218f634e727924c7b8b2820">4f301e2</a>: Fixup blocky
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/469f8cdd44faab2fca76ddf6a59d4d5ec0731757">469f8cd</a>: Fixup
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/7b0166f236a3d66afbce390e0dccd34c28875bb8">7b0166f</a>: Fixup new secret
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/94d82ffba0c51b3a7520f450b2d9965b5e71989a">94d82ff</a>: Fixup new secret
+- <a href="https://github.com/j0sh3rs/home-ops/commit/a18ef27e4ccb60b09645e761218497105088ca49">a18ef27</a>: fix(ai): correct Qwen3-1.7B min_bytes threshold (actual 1.17 GiB)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/bd2fbc5209b0e59d9f11c8825c35151555f0887e">bd2fbc5</a>: fix(ai): disable MoE models until GGUFs finish downloading
+- <a href="https://github.com/j0sh3rs/home-ops/commit/123bea44136358cbad0be2442ce028eedc4f827d">123bea4</a>: fix(ai): fix mcp_servers dict format; add Recreate strategy to llama-swap
+- <a href="https://github.com/j0sh3rs/home-ops/commit/8f86392853ab44f5c7571ba6b17ed9e91b2277c9">8f86392</a>: fix(ai): fix reranker filename case and revert 1.7B URL to unsloth
+- <a href="https://github.com/j0sh3rs/home-ops/commit/ad51fd723307e44a863fdb612bcd029ec0f20ece">ad51fd7</a>: fix(ai): update llama-swap init-container to fetch new GGUF stack
+- <a href="https://github.com/j0sh3rs/home-ops/commit/591f8139a92bc67aa351bd706c8680a00ed69ab0">591f813</a>: fix(ai): Point at right place for models
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>

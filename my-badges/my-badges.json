@@ -45,7 +45,7 @@
     "id": "favorite-word",
     "tier": 0,
     "desc": "My favorite word is \"update\".",
-    "body": "My favorite commit message words are:\n\n1. update (used 940 times)\n2. merge (used 415 times)\n3. request (used 405 times)\n4. pull (used 404 times)\n5. add (used 378 times)",
+    "body": "My favorite commit message words are:\n\n1. update (used 941 times)\n2. merge (used 415 times)\n3. request (used 405 times)\n4. pull (used 404 times)\n5. add (used 379 times)",
     "image": "https://my-badges.github.io/my-badges/favorite-word.png"
   },
   {
@@ -80,7 +80,7 @@
     "id": "fix-6",
     "tier": 5,
     "desc": "I did 6 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/8a722fdbe8faaa89cb6313e3d87874a32aefe901\">8a722fd</a>: Fixup blocky\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/cf4c97fb256864f5af0cdc32791e2f7b3845f63a\">cf4c97f</a>: Fixup LB IPs on Blocky\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/4f301e232a3c4a44b218f634e727924c7b8b2820\">4f301e2</a>: Fixup blocky\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/469f8cdd44faab2fca76ddf6a59d4d5ec0731757\">469f8cd</a>: Fixup\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/7b0166f236a3d66afbce390e0dccd34c28875bb8\">7b0166f</a>: Fixup new secret\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/94d82ffba0c51b3a7520f450b2d9965b5e71989a\">94d82ff</a>: Fixup new secret",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a18ef27e4ccb60b09645e761218497105088ca49\">a18ef27</a>: fix(ai): correct Qwen3-1.7B min_bytes threshold (actual 1.17 GiB)\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/bd2fbc5209b0e59d9f11c8825c35151555f0887e\">bd2fbc5</a>: fix(ai): disable MoE models until GGUFs finish downloading\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/123bea44136358cbad0be2442ce028eedc4f827d\">123bea4</a>: fix(ai): fix mcp_servers dict format; add Recreate strategy to llama-swap\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/8f86392853ab44f5c7571ba6b17ed9e91b2277c9\">8f86392</a>: fix(ai): fix reranker filename case and revert 1.7B URL to unsloth\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/ad51fd723307e44a863fdb612bcd029ec0f20ece\">ad51fd7</a>: fix(ai): update llama-swap init-container to fetch new GGUF stack\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/591f8139a92bc67aa351bd706c8680a00ed69ab0\">591f813</a>: fix(ai): Point at right place for models",
     "image": "https://my-badges.github.io/my-badges/fix-6.png"
   },
   {
@@ -143,7 +143,7 @@
     "id": "evening-commits",
     "tier": 0,
     "desc": "I commit in the evening.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a81fc2d05ce868660d226fdf2e48adff22b2a89e\">a81fc2d</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a840ad4f43dec20498ff3bf4125db094d566cd41\">a840ad4</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/95c98925f29e93c5ffc496b5ca6e5e770f407f11\">95c9892</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/50ddebc730f375818d55b891fdcf312893064f99\">50ddebc</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c9178672f6a852c051a0e74c92dabf9758aaa7d6\">c917867</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/35fb2dab6758099de71a68d41c7a85763e9fa479\">35fb2da</a>",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a18ef27e4ccb60b09645e761218497105088ca49\">a18ef27</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a81fc2d05ce868660d226fdf2e48adff22b2a89e\">a81fc2d</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a840ad4f43dec20498ff3bf4125db094d566cd41\">a840ad4</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/95c98925f29e93c5ffc496b5ca6e5e770f407f11\">95c9892</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/50ddebc730f375818d55b891fdcf312893064f99\">50ddebc</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c9178672f6a852c051a0e74c92dabf9758aaa7d6\">c917867</a>",
     "image": "https://my-badges.github.io/my-badges/evening-commits.png"
   },
   {
