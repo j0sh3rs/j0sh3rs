@@ -4,19 +4,29 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/fec15e8a198d0546c65c74ea33bb22b580c12011">fec15e8</a>: fix(ai): redirect git global config to PVC path in claude-code bootstrap
+- <a href="https://github.com/j0sh3rs/home-ops/commit/7862ad37a79570dfcb72a06cf8338be3399b6c6e">7862ad3</a>: fix(ai): set CLAUDE_CONFIG_DIR so account/org state persists on PVC
 
-/home/claude/.gitconfig is read-only in the container image layer.
-GIT_CONFIG_GLOBAL redirects to the NFS PVC which is writable by uid 1001.
-- <a href="https://github.com/j0sh3rs/home-ops/commit/9167fa0c77526f03abd3b3e121669968c3662f45">9167fa0</a>: fix(ai): run claude-code bootstrap as uid 1001, drop debian init
+Root cause of remote-control 'Unable to determine your organization': Claude
+splits config between $HOME/.claude.json (HOME root — EPHEMERAL, only .claude
+is the PVC mount) and $HOME/.claude/. Account/org state landed on ephemeral fs
+and vanished on pod restart. Pin CLAUDE_CONFIG_DIR=/home/claude/.claude
+(daemon app+bootstrap + runner) so ALL config persists on the volume.
 
-NFS root_squash prevents chown from root. Switch init to main image
-(already has git+bash), run as 1001 throughout. Replace envsubst with
-sed (no gettext-base needed on alpine).
-- <a href="https://github.com/j0sh3rs/home-ops/commit/26e2fc25666cc1f719b30d5eedb92942d592d851">26e2fc2</a>: fix(ai): fix git safe.directory in claude-code bootstrap init
+Refs #423
+- <a href="https://github.com/j0sh3rs/home-ops/commit/ae572e8310999a78a5c84361a90928d1487e53ff">ae572e8</a>: fix(ai): runner Job uid 1024:100 to match baked image user
 
-Init runs as root; workspace owned 1001:1001 from prior run triggers
-git 2.35+ dubious ownership rejection on fetch/reset.
+Align headless runner Job securityContext with the claude-code image's
+pinned user (1024:100). Keeps image == pod across both daemon and runner.
+
+Refs #423
+- <a href="https://github.com/j0sh3rs/home-ops/commit/910c74174dcfc2e7b4ade4b65e86e5a72a95142c">910c741</a>: fix(ai): claude-code gid 100 (users) to match NFS admin:users ownership
+
+NFS mount owns files as admin:users = uid 1024, gid 100 (not gid 1024 as
+previously set). Align pod + both containers + fsGroup to 1024:100 so the
+process fully owns its state files. Sleep override retained until a fresh
+claude auth login on the purged mount verifies as 1024:100.
+
+Refs #423
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>

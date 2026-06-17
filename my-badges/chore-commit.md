@@ -4,21 +4,15 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/d087373ef6b51374578d60f2a56e798d0c82d645">d087373</a>: chore(ai): Phase 0 cleanup — renovate pins, mem0 removal, dead env strip
+- <a href="https://github.com/j0sh3rs/home-ops/commit/2e03c71ebe6f04cc4107bb2b0a2dd88bdf418274">2e03c71</a>: chore(ai): disable claude-code daemon — remote-control not viable in-cluster
 
-- Add Renovate packageRule pinning llama-swap to -vulkan-b suffix only,
-  automerge:false, removed from AI Stack group (prevents silent auto-merge
-  of -rocm/-cuda tags that are non-functional on Talos Vulkan-only cluster)
-- Add Renovate packageRule pinning n8n to 2.23.x (blocks 2.24+ beta)
-- Delete kubernetes/apps/ai/mem0/ (image permanently 404, no viable
-  self-host path; cross-app shared memory layer dropped by design decision)
-- Remove mem0 kustomization entry from ai/kustomization.yaml
-- Strip dead MEMORY_PROVIDER/MEM0_API_BASE_URL/MEM0_API_KEY env vars from
-  open-webui HelmRelease (OWUI upstream has no external memory provider)
-- Fix stale llama-swap configmap comment: Cezanne APU → Navi 21 dGPU on
-  bigboi-jms-01
-- Fix CLAUDE.md: MetaMCP moved from disabled → active services; llama-swap
-  node ref updated bee-jms-03 → bigboi-jms-01
+Auth + persistence fully resolved (CLAUDE_CONFIG_DIR, uid 1024:100, OAuth on
+PVC), but remote-control did not work usefully in-cluster and further effort
+isn't worth it. The autonomous code-automation loop does NOT depend on this
+daemon — it uses headless 'claude -p' Jobs (claude-code/runner/). Manifests
+retained, just not reconciled.
+
+Refs #423
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
