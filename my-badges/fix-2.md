@@ -4,46 +4,25 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/9f26bd8b325bab92b9ce92f618ea3e72c28220ef">9f26bd8</a>: Fix/claude code auth split (#431)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/6b3528aa89b91ce5fd8a252a37137491423933d9">6b3528a</a>: fix(ai): mount n8n SA token in-pod instead of static K8S_SA_TOKEN var
 
-* temp(ai): re-sleep claude-code for 'claude auth login'
+K8s auto-populates the service-account-token Secret; n8n reads it as
+$env.N8N_K8S_TOKEN in Code nodes.
 
-Prior 'claude login' left remote-control failing org-eligibility lookup.
-Re-sleep so operator runs 'claude auth login' (the command the error names).
-Token persists on claude-home PVC (nfs-client, confirmed network-backed).
-Revert after.
+- n8n/app/sa-token.sops.yaml: SOPS-encrypted k8s SA token Secret
+- n8n/app/kustomization.yaml: adds sa-token.sops.yaml
+- n8n/app/helmrelease.yaml: env N8N_K8S_TOKEN from secretKeyRef
+- loop-orchestrator.json: $vars.K8S_SA_TOKEN → $env.N8N_K8S_TOKEN
+- <a href="https://github.com/j0sh3rs/home-ops/commit/66d216bfca9d3e6349647546ddcd7dd30793cb9a">66d216b</a>: fix(traefik): revert CF-Connecting-IP keying — 403s LAN-direct traffic
 
-Refs #423
+PR #434 keyed rate-limit + CrowdSec on CF-Connecting-IP. That header only
+exists on Cloudflare-tunneled requests. LAN clients resolve external-gateway
+hosts (e.g. n8n.68cc.io) to VIP 192.168.35.15 via unifi-dns split-horizon and
+hit Traefik directly, bypassing Cloudflare — so no CF-Connecting-IP header.
+The crowdsec-bouncer then 403'd every LAN-direct request (remediationStatusCode
+403). Revert both middlewares to ipStrategy.depth:1 (XFF) to restore service.
 
-* fix(ai): run claude-code as uid 1024 to match NFS squash
-
-Root cause of remote-control org-eligibility failure: nfs-client squashes
-all writes to uid/gid 1024, but the pod ran as 1001 — so it could not read
-its own NFS-owned 0600 state file ~/.claude/.claude.json (org/account info),
-breaking the eligibility lookup. Run AS 1024 (pod + both containers) +
-fsGroup 1024 so the process owns and can read/write its state. Sleep override
-retained: a fresh 'claude auth login' as 1024 is needed to finally write the
-org block into .claude.json (prior logins as 1001 could not).
-
-Refs #423
-- <a href="https://github.com/j0sh3rs/home-ops/commit/c3ab4ec25180483858e0ae3e49a093c9f7693792">c3ab4ec</a>: Fix/claude code auth split (#430)
-
-* revert(ai): claude-code daemon back to remote-control after OAuth login
-
-OAuth token confirmed on claude-home PVC (.credentials.json). Restore the
-remote-control command + re-enable liveness. Daemon now authenticates via
-the persisted claude.ai subscription token.
-
-Refs #423
-
-* temp(ai): re-sleep claude-code for 'claude auth login'
-
-Prior 'claude login' left remote-control failing org-eligibility lookup.
-Re-sleep so operator runs 'claude auth login' (the command the error names).
-Token persists on claude-home PVC (nfs-client, confirmed network-backed).
-Revert after.
-
-Refs #423
+Proper fix (per-path IP strategy for tunnel vs LAN) deferred — needs testing.
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
