@@ -1,0 +1,35 @@
+---
+name: daily-quote
+
+"on":
+  workflow_dispatch:
+  schedule:
+    - cron: "5 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  rotate-quote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Rotate quote in README
+        run: node .github/scripts/rotate-quote.mjs
+
+      - name: Commit if changed
+        env:
+          BOT_NAME: "github-actions[bot]"
+          BOT_EMAIL: "github-actions[bot]@users.noreply.github.com"
+        run: |
+          if [[ -n "$(git status --porcelain README.md)" ]]; then
+            git config user.name "$BOT_NAME"
+            git config user.email "$BOT_EMAIL"
+            git add README.md
+            git commit -m "chore(quote): rotate daily philosophy quote"
+            git push
+          else
+            echo "No quote change today; nothing to commit."
+          fi
