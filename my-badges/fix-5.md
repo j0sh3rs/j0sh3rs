@@ -4,66 +4,38 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/539fd6eafddd7b390f8d59dbac9ed195c320f10d">539fd6e</a>: fix(databases): allow cross-namespace clients to dragonfly 6379
+- <a href="https://github.com/j0sh3rs/home-ops/commit/77e78a676b83ab94bc90743a39a13d24c5bb5130">77e78a6</a>: fix(omega-mcp): bump to 1.5.4-r5 (MAC-independent license fingerprint)
 
-The dragonfly operator's auto-created NetworkPolicy only permits port
-6379 ingress from pods inside the databases namespace (podSelector: {}
-with no namespaceSelector). Our Redis clients live in other namespaces:
-ai (litellm db4, langfuse db6, open-webui) and services (paperless db2).
+Picks up the sitecustomize.py uuid.getnode() pin from
+j0sh3rs/containers (commit 2dc0ccb). Also reverts the hostNetwork
+stopgap from the manifest (fix A) now that the image-side fix (B)
+handles the fingerprint. Stable hostname retained.
+- <a href="https://github.com/j0sh3rs/home-ops/commit/a4925144c24cccfa29b801e2206fd4e45ad0120c">a492514</a>: fix(omega-mcp): hostNetwork to stabilize license MAC fingerprint
 
-When the operator deletes+recreates the Dragonfly instance (e.g. on a
-VolumeClaimTemplates change, which happened 2026-06-22) it re-applies
-that lockdown, severing every cross-namespace client. litellm then
-blocked ~270s on Redis connect during FastAPI startup and crashlooped
-past its 300s startup-probe budget — full ai-namespace LLM outage.
+The OMEGA Pro license fingerprint includes uuid.getnode() (the pod
+eth0 MAC). Cilium 1.19 assigns a random MAC per pod and has no static
+MAC annotation, so the fingerprint changed every rollout and the
+pro_tools init gate failed (CrashLoopBackOff) even after a successful
+omega activate. Run on the host network so uuid.getnode() resolves the
+node's stable NIC MAC; the pod is already node-pinned via openebs RWO.
 
-NetworkPolicies are additive, so this sibling policy (mirroring the
-existing dragonflydb-allow-monitoring-scrape pattern for 9999) unions
-with the operator-managed one to allow ai + services clients on 6379.
-- <a href="https://github.com/j0sh3rs/home-ops/commit/8a03f88dca6ca3a2a1d0e8de19f9d98aec97ee8c">8a03f88</a>: fix(ai): add 15m HelmRelease timeout to litellm
+Stopgap (fix A). Clean fix (B) is a sitecustomize.py in the
+j0sh3rs/containers omega-mcp image pinning uuid.getnode() from
+device_id; revert hostNetwork once that -r5 image ships.
+- <a href="https://github.com/j0sh3rs/home-ops/commit/003afbdcf2498d0dc40909f18345dfc07658f1c1">003afbd</a>: fix(omega-mcp): pin stable pod hostname for license fingerprint
 
-The v1.89.3 upgrade ran the Prisma migrationJob (helm pre-upgrade hook)
-then the Deployment rollout exceeded Helm's default 5m wait window. Helm
-auto-rolled-back the Deployment to v1.88.1 but NOT the applied migration,
-leaving v1.88.1 booting against a 1.89.3 DB schema — it hangs at 'Waiting
-for application startup' and the startup probe crashloops it (no Ready
-endpoints, every consumer gets EHOSTUNREACH).
+OMEGA Pro license is machine-fingerprint bound and the vendor wheel
+computes the fingerprint from the pod hostname. On a Deployment the
+hostname defaults to the random pod name, so every rollout produced a
+new fingerprint and the pro_tools init gate failed (init-omega exit 1
+-> CrashLoopBackOff) even after a successful 'omega activate'. Pin
+hostname=omega-mcp so one activation persists across rollouts.
 
-A generous spec.timeout lets the rollout finish inside the wait window so
-the rollback never fires. DB is already at 1.89.3, so rolling forward is
-the correct, lower-risk resolution.
-- <a href="https://github.com/j0sh3rs/home-ops/commit/9d95a8590322e993b4db155da8d253dba1075e61">9d95a85</a>: fix(monitoring): bump netdata parent+k8s-state mem limits
-
-k8s-state at 96% of 256Mi limit (246Mi used) — imminent OOM.
-parent at 90% of 1Gi (920Mi used). Raise headroom:
-- k8sState: req 64->192Mi, limit 256->512Mi
-- parent: req 512->768Mi, limit 1Gi->1536Mi
-- <a href="https://github.com/j0sh3rs/home-ops/commit/2764c8925ddcd145d73a27f1b8e4626a3b231068">2764c89</a>: fix(monitoring): retune noisy alerts to kill false positives
-
-DragonflyDB (instance/prometheusrule.yaml) — instance is healthy/idle:
-- AvgCommandLatencyHigh: exclude bzpopmin/bzpopmax/blmpop/bzmpop (Celery/Kombu
-  blocking pops). Was firing at 114ms; real cmds sub-ms, expr now ~24us.
-- BlockedClients: threshold 5->50, for 10m->15m. Baseline is a flat 30 idle
-  broker consumers (Paperless+Authentik+Kombu), not a leak.
-- HitRatioLow: add >1 op/s volume gate. db4 LiteLLM cache runs ~0.01 op/s idle,
-  so a single miss swung the ratio across 70% — pure sampling noise.
-
-Tetragon — both firings confirmed benign:
-- ContainerEscape: exclude netdata-child binaries (privileged host /proc,/sys
-  mounts + cgroup-network netns entry).
-- ShellSpawn: exclude linkwarden (yarn/concurrently sh entrypoint).
-
-Dockerhub (kube-prometheus-stack): DockerhubRateLimitRisk critical->warning;
-soft capacity signal, Spegel caching blunts the real risk.
-- <a href="https://github.com/j0sh3rs/home-ops/commit/7574fdaa3956adb9238ee24c04243d075d3b2ffa">7574fda</a>: fix(monitoring): stop netdata crashloop (parent opt-out write, child OOM)
-
-- Remove DO_NOT_TRACK from parent: entrypoint touches
-  /etc/netdata/.opt-out-from-anonymous-statistics, but parent runs as uid 201
-  against root-owned /etc/netdata -> write fails, container exits 1. Opt-out is
-  moot with Netdata Cloud claiming already enabled.
-- Remove DO_NOT_TRACK from child for consistency.
-- Bump child memory 256Mi->512Mi limit, 64Mi->256Mi request (was OOMKilled
-  137; running children measured at 207-242Mi, over the old limit).
+Node identity was never the cause: openebs-hostpath RWO already pins
+the pod to bee-jms-01.
+- <a href="https://github.com/j0sh3rs/home-ops/commit/46ccc9c8c5faa89d5304dbc621d7a1eb375141be">46ccc9c</a>: fix(ai): omega-mcp renovate tag fix to keep the build portion of release
+- <a href="https://github.com/j0sh3rs/home-ops/commit/4f3e6b7c00f3f6d3283de322d9237e730d79a964">4f3e6b7</a>: fix(omega): Bump omega to proper r version with pro fixes"
+"
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
