@@ -4,28 +4,10 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/a187e66daa0eb8e489a856313b16217018a6ebc9">a187e66</a>: fix(ai): fix cloudflare MCP server registration args
-
-@cloudflare/mcp-server-cloudflare requires `run <account_id>` subcommand.
-Add CLOUDFLARE_ACCOUNT_ID to secret (BTH Account) and pass it as arg.
-- <a href="https://github.com/j0sh3rs/home-ops/commit/245803f59d21ca05864cbce51b54ec8b70887885">245803f</a>: fix(ai): write mcpjungle conf directly from stored admin token
-
-init-server only writes ~/.mcpjungle.conf on first run; subsequent runs
-("already initialized") exit non-zero without writing the file, leaving
-no access token for register calls. Write the conf directly from
-MCPJUNGLE_ADMIN_TOKEN (stored in secret) — idempotent across all runs.
-- <a href="https://github.com/j0sh3rs/home-ops/commit/051630b22522a98e7ab5f7f9ec2b8adfee3839ae">051630b</a>: fix(ai): add explicit login after init-server in bootstrap job
-
-init-server does not write ~/.mcpjungle.conf when server is already
-initialized, leaving no access token for subsequent CLI calls. Always
-run `login MCPJUNGLE_API_KEY` after init-server to ensure conf file
-is present regardless of init-server outcome.
-- <a href="https://github.com/j0sh3rs/home-ops/commit/ec45df329e6a328647d75ea15bb7da4b874da1db">ec45df3</a>: fix(ai): fix mcpjungle bootstrap job for v0.4.5 CLI
-
-Binary is /mcpjungle (not on PATH). init-server has no --admin-email/
---admin-password flags in v0.4.5 (reads env automatically). `list`
-requires `list servers` subcommand. grep pattern updated to match
-plain-text output format ("1. name\n...") not JSON.
+- <a href="https://github.com/j0sh3rs/home-ops/commit/285c3e579b38d88ff585cdf60bcef9a4a4eecb96">285c3e5</a>: fix(ai): move qwen3-1.7b to swap group, free 1.4GiB VRAM for Qwen3.6-27B
+- <a href="https://github.com/j0sh3rs/home-ops/commit/e3b215f42fc9a14cddf25e4c0e5ae9181e081513">e3b215f</a>: fix(ai): raise memory limit to 16Gi, reduce qwen3.6-27b ctx to 8192 to fit VRAM
+- <a href="https://github.com/j0sh3rs/home-ops/commit/d1059fc0d3f6271f95904faa5038febf09416484">d1059fc</a>: fix(ai): revert to Vulkan v230-b9803 (ROCm slower on 9070 XT, bandwidth-bound)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/0b175478419426443b8f88762d7aaf0879f9b591">0b17547</a>: fix(ai): switch to ROCm b9803 for gfx1201 (9070 XT), test qwen35 arch support
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
