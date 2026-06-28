@@ -4,16 +4,16 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/c695b0be8249a2791616f20c4222c815a1b808d7">c695b0b</a>: Fixup
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/d4f821dcac1572dcc914f102da9405d1a9a23b1f">d4f821d</a>: Fixup
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/593bc9b15bad4eaeb3d66b34f391c6d142ee267d">593bc9b</a>: Fixup
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/02d569ea9847ae8414708845768a43e5021e3395">02d569e</a>: Fixup
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/977142dbdf31403ac04c94b380f26de12c239f13">977142d</a>: Fixup
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/abbd423c7c8c3915d6610c0317c067a025e48410">abbd423</a>: Fixup
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/dc8870ffdb967ff99316d86379861d773ee8d038">dc8870f</a>: Fixup
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/798a95394a2081b637b7deb2bf2634ac0531693a">798a953</a>: Fixup
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/a01e197b30f4f1d2d8d62e90295080aa83b44f3f">a01e197</a>: Fixup
-- <a href="https://github.com/j0sh3rs/k3s-at-home/commit/90db61d54f2de568d11e45175095ab3d3984c1e2">90db61d</a>: Fixup
+- <a href="https://github.com/j0sh3rs/home-ops/commit/fb07e727943b3f3df9b1735cbade44b72bd8de89">fb07e72</a>: fix(opencode): remove OPENCODE_SERVER_PASSWORD from secret (basic auth disabled)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/9c7cb96202c282318305a3139df8820d26b5893c">9c7cb96</a>: fix(opencode): drop basic auth, switch to external gateway + Cloudflare tunnel
+- <a href="https://github.com/j0sh3rs/home-ops/commit/c152349d5786c53a670429d65d77a6c28b1ad62b">c152349</a>: fix(opencode): providers -> provider (singular) in config.json
+- <a href="https://github.com/j0sh3rs/home-ops/commit/6d029e064090fd2c55cd70fb3f2a9754b9c56c14">6d029e0</a>: fix(opencode): correct image tag to 1.17.11 (no v prefix)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/30e3a6a32db5b288dbff76d68bd05d0ba53dbe99">30e3a6a</a>: fix(opencode): correct image tag scheme (anomalyco uses 1.0.X not v1.17.X)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/d001f2a1b171ad055d8d82fee7ce060e02be78c7">d001f2a</a>: fix(opencode): correct init container config copy path
+- <a href="https://github.com/j0sh3rs/home-ops/commit/42e37ca39c8421ed3570da9df2c7015632f398dc">42e37ca</a>: fix(opencode): remove inline volumeMounts from initContainer (app-template v4)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/ca974e16ca00fe81aa4225257129bbb8572aa546">ca974e1</a>: fix(kelos): remove AgentConfig fields not in v1alpha2 schema
+- <a href="https://github.com/j0sh3rs/home-ops/commit/793c2f258908c436ec19ce161d13fd65a8d8b7b2">793c2f2</a>: fix(kelos): enable crds.install via chart values not Flux crds field
+- <a href="https://github.com/j0sh3rs/home-ops/commit/77fba31cac5933a77b6e356f4981a9c923e44697">77fba31</a>: fix(kelos): use source.toolkit.fluxcd.io/v1 for OCIRepository
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
