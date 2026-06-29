@@ -4,12 +4,12 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/a18ef27e4ccb60b09645e761218497105088ca49">a18ef27</a>: fix(ai): correct Qwen3-1.7B min_bytes threshold (actual 1.17 GiB)
-- <a href="https://github.com/j0sh3rs/home-ops/commit/bd2fbc5209b0e59d9f11c8825c35151555f0887e">bd2fbc5</a>: fix(ai): disable MoE models until GGUFs finish downloading
-- <a href="https://github.com/j0sh3rs/home-ops/commit/123bea44136358cbad0be2442ce028eedc4f827d">123bea4</a>: fix(ai): fix mcp_servers dict format; add Recreate strategy to llama-swap
-- <a href="https://github.com/j0sh3rs/home-ops/commit/8f86392853ab44f5c7571ba6b17ed9e91b2277c9">8f86392</a>: fix(ai): fix reranker filename case and revert 1.7B URL to unsloth
-- <a href="https://github.com/j0sh3rs/home-ops/commit/ad51fd723307e44a863fdb612bcd029ec0f20ece">ad51fd7</a>: fix(ai): update llama-swap init-container to fetch new GGUF stack
-- <a href="https://github.com/j0sh3rs/home-ops/commit/591f8139a92bc67aa351bd706c8680a00ed69ab0">591f813</a>: fix(ai): Point at right place for models
+- <a href="https://github.com/j0sh3rs/home-ops/commit/efe699db9db2c06baafd628b9b938b7acf28f1c5">efe699d</a>: fix(kelos): quote GITHUB_APP_ID/INSTALLATION_ID as strings (k8s stringData rejects int)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/145b489c03e4ea90e2b835984d4bc42b10a55980">145b489</a>: fix(kelos): bake proven config.json setup, switch test task to local-balanced (32k ctx)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/c8ec7a7c391d716b0813b14749daa5d3fea2634d">c8ec7a7</a>: fix(kelos): Add httproute, fix secret failure
+- <a href="https://github.com/j0sh3rs/home-ops/commit/615e4179086168893c95e52995e3ba985930da14">615e417</a>: fix(kelos): fix config.json heredoc indentation causing invalid JSON in Task pods
+- <a href="https://github.com/j0sh3rs/home-ops/commit/536f6e96dd8d9c39a22847c96117a1ad313ae9c1">536f6e9</a>: fix(kelos): write litellm provider config.json in workspace setupCommand, fix model prefix
+- <a href="https://github.com/j0sh3rs/home-ops/commit/5d2b213db957cadf75513c503b6050e2024c6299">5d2b213</a>: fix(kelos): Typo in secret name
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>

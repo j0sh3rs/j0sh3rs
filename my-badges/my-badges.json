@@ -45,21 +45,21 @@
     "id": "favorite-word",
     "tier": 0,
     "desc": "My favorite word is \"update\".",
-    "body": "My favorite commit message words are:\n\n1. update (used 951 times)\n2. merge (used 422 times)\n3. request (used 418 times)\n4. add (used 416 times)\n5. pull (used 411 times)",
+    "body": "My favorite commit message words are:\n\n1. update (used 951 times)\n2. merge (used 422 times)\n3. add (used 420 times)\n4. request (used 418 times)\n5. pull (used 413 times)",
     "image": "https://my-badges.github.io/my-badges/favorite-word.png"
   },
   {
     "id": "fix-2",
     "tier": 1,
     "desc": "I did 2 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/27cee27e7661609ae2715dce5967388f2193a4f2\">27cee27</a>: fix(ai): disable prompt cache for qwen3.6-27b to prevent VRAM starvation\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/8b9d49a3ce398f37c2c26a42665518a6eafefa65\">8b9d49a</a>: fix(talos): Drop secondary DNS resolver from cluster",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/d427973d6886cb3f21dd1e1b4cf8c1180d3062ef\">d427973</a>: fix(ai): GH auth for kelos and OpenCode\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/fee065118460aa9307b0443f387cc5eb4e562cd9\">fee0651</a>: fix(ai): Drop cache-ram param",
     "image": "https://my-badges.github.io/my-badges/fix-2.png"
   },
   {
     "id": "fix-3",
     "tier": 2,
     "desc": "I did 3 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/af16b3e4c84ace6b3bdc90817ce3d7d021b798ad\">af16b3e</a>: fix(ai): goose runner — correct image+provider+flags for headless P1\n\nWorking config after iterative probe:\n- Image: ghcr.io/block/goose:latest (main branch); v1.9.0 has\n  token_counter.rs:93 panic on tools with no properties field; fix\n  landed on main, no semver tag available yet\n- Provider: GOOSE_PROVIDER=litellm + LITELLM_HOST (native provider);\n  GOOSE_PROVIDER=openai + OPENAI_BASE_URL was wrong — openai provider\n  defaults to api.openai.com regardless of BASE_URL in v1.9.0\n- LITELLM_API_KEY aliased from OPENAI_API_KEY secret key\n- Flags: --no-session --with-builtin developer; --no-profile removed\n  (flag does not exist in v1.9.0+)\n- RUST_BACKTRACE removed (debug only)\n\nP1 verified: PROBE_OK.md written, git diff shows untracked file, rc=0\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/475014c6d8d30e3c025eddb93f9820ea956c28bb\">475014c</a>: fix(traefik): harden edge IP keying, zero-downtime rollout, drop Dolt listener (#434)\n\n- Key rate-limit + CrowdSec on CF-Connecting-IP (XFF unreliable behind CF tunnel)\n- Add DaemonSet maxSurge:1/maxUnavailable:0 to both instances (externalTrafficPolicy:Local zero-downtime)\n- Open postgres 5432 + syslog 514 in traefik-internal CiliumNetworkPolicy (listeners were being dropped)\n- Disable HTTP/3 on traefik-external (CF terminates h3 at edge; was opening UDP/443 on public VIP)\n- Remove decommissioned Dolt mysql 3306 listener\n- Fix stale rate-limit throughput comment (300 not 180 req/s)\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/f516c41508148ae8fee24bfcf2ae97476e87a634\">f516c41</a>: fix(traefik): Setup for the chart bump",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/87fcb650d67fe1599644a46c0e6d11ede139d908\">87fcb65</a>: fix(kelos): conditional issue close — only when work complete and verified\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/687dbd8b4e4019197c1235fd1e183db83ea2e829\">687dbd8</a>: fix(kelos): use local-reason-agent (32k ctx), add gh issue close after push\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/4dcb1d4c2204ef7a35e3dd8155e65393712eda96\">4dcb1d4</a>: fix(kelos): correct HTTPRoute backend name kelos-github-webhook→kelos-webhook-github",
     "image": "https://my-badges.github.io/my-badges/fix-3.png"
   },
   {
@@ -80,7 +80,7 @@
     "id": "fix-6",
     "tier": 5,
     "desc": "I did 6 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a18ef27e4ccb60b09645e761218497105088ca49\">a18ef27</a>: fix(ai): correct Qwen3-1.7B min_bytes threshold (actual 1.17 GiB)\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/bd2fbc5209b0e59d9f11c8825c35151555f0887e\">bd2fbc5</a>: fix(ai): disable MoE models until GGUFs finish downloading\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/123bea44136358cbad0be2442ce028eedc4f827d\">123bea4</a>: fix(ai): fix mcp_servers dict format; add Recreate strategy to llama-swap\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/8f86392853ab44f5c7571ba6b17ed9e91b2277c9\">8f86392</a>: fix(ai): fix reranker filename case and revert 1.7B URL to unsloth\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/ad51fd723307e44a863fdb612bcd029ec0f20ece\">ad51fd7</a>: fix(ai): update llama-swap init-container to fetch new GGUF stack\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/591f8139a92bc67aa351bd706c8680a00ed69ab0\">591f813</a>: fix(ai): Point at right place for models",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/efe699db9db2c06baafd628b9b938b7acf28f1c5\">efe699d</a>: fix(kelos): quote GITHUB_APP_ID/INSTALLATION_ID as strings (k8s stringData rejects int)\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/145b489c03e4ea90e2b835984d4bc42b10a55980\">145b489</a>: fix(kelos): bake proven config.json setup, switch test task to local-balanced (32k ctx)\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c8ec7a7c391d716b0813b14749daa5d3fea2634d\">c8ec7a7</a>: fix(kelos): Add httproute, fix secret failure\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/615e4179086168893c95e52995e3ba985930da14\">615e417</a>: fix(kelos): fix config.json heredoc indentation causing invalid JSON in Task pods\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/536f6e96dd8d9c39a22847c96117a1ad313ae9c1\">536f6e9</a>: fix(kelos): write litellm provider config.json in workspace setupCommand, fix model prefix\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/5d2b213db957cadf75513c503b6050e2024c6299\">5d2b213</a>: fix(kelos): Typo in secret name",
     "image": "https://my-badges.github.io/my-badges/fix-6.png"
   },
   {
@@ -122,7 +122,7 @@
     "id": "polite-coder",
     "tier": 0,
     "desc": "I am a polite coder.",
-    "body": "I use words like \"thanks\" and \"please\" in my issues:\n\n- <a href=\"https://github.com/Rafficer/linux-cli-community/issues/230\">#230</a>: [Enhancement] Inclusive vs Exclusive Split Tunneling\n- <a href=\"https://github.com/hibiken/asynq/issues/836\">#836</a>: [GENERAL QUESTION] Status of this project?\n- <a href=\"https://github.com/hashicorp/terraform/issues/14796\">#14796</a>: Cannot Manage Google Cloud DNS NS Records\n- <a href=\"https://github.com/hashicorp/terraform/issues/14808\">#14808</a>: Google Cloud DNS Zone + Record Set Chaining Issue\n- <a href=\"https://github.com/hashicorp/terraform-provider-aws/issues/5905\">#5905</a>: Route53 HealthChecks on Cloudwatch Metrics Conflict on 'period' specification\n\n And many more...",
+    "body": "I use words like \"thanks\" and \"please\" in my issues:\n\n- <a href=\"https://github.com/Rafficer/linux-cli-community/issues/230\">#230</a>: [Enhancement] Inclusive vs Exclusive Split Tunneling\n- <a href=\"https://github.com/hashicorp/terraform/issues/14796\">#14796</a>: Cannot Manage Google Cloud DNS NS Records\n- <a href=\"https://github.com/hashicorp/terraform/issues/14808\">#14808</a>: Google Cloud DNS Zone + Record Set Chaining Issue\n- <a href=\"https://github.com/hashicorp/terraform-provider-aws/issues/5905\">#5905</a>: Route53 HealthChecks on Cloudwatch Metrics Conflict on 'period' specification\n- <a href=\"https://github.com/oracle/bpftune/issues/19\">#19</a>: [Feature] Dry Run Mode\n\n And many more...",
     "image": "https://my-badges.github.io/my-badges/polite-coder.png"
   },
   {
@@ -143,7 +143,7 @@
     "id": "evening-commits",
     "tier": 0,
     "desc": "I commit in the evening.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/27cee27e7661609ae2715dce5967388f2193a4f2\">27cee27</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/881be426b033b942349ebb26d653862eb020eb37\">881be42</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/7075b7aa0d1ff62c914203e99073231c98aa1d99\">7075b7a</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/d374d19c2ef535e404b0fbd0c09f3598d038aaf7\">d374d19</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/ca871db63c4230dbda565c69870106efe4b91ce1\">ca871db</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/95901cae023ab8cea3041e74a75c3ce672c39736\">95901ca</a>",
+    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9d57756195e065d0bd4ba88a4c1030aa26dc24d2\">9d57756</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/87fcb650d67fe1599644a46c0e6d11ede139d908\">87fcb65</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/687dbd8b4e4019197c1235fd1e183db83ea2e829\">687dbd8</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/4dcb1d4c2204ef7a35e3dd8155e65393712eda96\">4dcb1d4</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/f58a4e94b5daa8e247fb7c16eb54010b759f2a96\">f58a4e9</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/3a1f16d7629577ce9cb4f54f60efc01710395359\">3a1f16d</a>",
     "image": "https://my-badges.github.io/my-badges/evening-commits.png"
   },
   {
@@ -236,5 +236,26 @@
     "desc": "I merged a PR with failing checks",
     "body": "Pull requests:\n\n- <a href=\"https://github.com/j0sh3rs/containers/pull/3\">#3</a>: feat(containers): Add new omega memory container",
     "image": "https://my-badges.github.io/my-badges/this-is-fine.png"
+  },
+  {
+    "id": "old-issue-2",
+    "tier": 2,
+    "desc": "I closed an issue that was open for 2 years",
+    "body": "Issues:\n\n- <a href=\"https://github.com/hibiken/asynq/issues/836\">#836</a>: [GENERAL QUESTION] Status of this project?",
+    "image": "https://my-badges.github.io/my-badges/old-issue-2.png"
+  },
+  {
+    "id": "old-issue-6",
+    "tier": 6,
+    "desc": "I closed an issue that was open for 6 years",
+    "body": "Issues:\n\n- <a href=\"https://github.com/linkerd/linkerd/issues/2382\">#2382</a>: Linkerd CPU Hotspots and Thread Usage",
+    "image": "https://my-badges.github.io/my-badges/old-issue-6.png"
+  },
+  {
+    "id": "old-issue-9",
+    "tier": 9,
+    "desc": "I closed an issue that was open for 9 years",
+    "body": "Issues:\n\n- <a href=\"https://github.com/awslabs/lambda-streams-to-firehose/issues/48\">#48</a>: README and Downloads have incorrect version reference",
+    "image": "https://my-badges.github.io/my-badges/old-issue-9.png"
   }
 ]

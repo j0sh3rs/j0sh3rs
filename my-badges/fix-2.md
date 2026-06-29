@@ -4,8 +4,8 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/27cee27e7661609ae2715dce5967388f2193a4f2">27cee27</a>: fix(ai): disable prompt cache for qwen3.6-27b to prevent VRAM starvation
-- <a href="https://github.com/j0sh3rs/home-ops/commit/8b9d49a3ce398f37c2c26a42665518a6eafefa65">8b9d49a</a>: fix(talos): Drop secondary DNS resolver from cluster
+- <a href="https://github.com/j0sh3rs/home-ops/commit/d427973d6886cb3f21dd1e1b4cf8c1180d3062ef">d427973</a>: fix(ai): GH auth for kelos and OpenCode
+- <a href="https://github.com/j0sh3rs/home-ops/commit/fee065118460aa9307b0443f387cc5eb4e562cd9">fee0651</a>: fix(ai): Drop cache-ram param
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>

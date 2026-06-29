@@ -4,12 +4,12 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/27cee27e7661609ae2715dce5967388f2193a4f2">27cee27</a>
-- <a href="https://github.com/j0sh3rs/home-ops/commit/881be426b033b942349ebb26d653862eb020eb37">881be42</a>
-- <a href="https://github.com/j0sh3rs/home-ops/commit/7075b7aa0d1ff62c914203e99073231c98aa1d99">7075b7a</a>
-- <a href="https://github.com/j0sh3rs/home-ops/commit/d374d19c2ef535e404b0fbd0c09f3598d038aaf7">d374d19</a>
-- <a href="https://github.com/j0sh3rs/home-ops/commit/ca871db63c4230dbda565c69870106efe4b91ce1">ca871db</a>
-- <a href="https://github.com/j0sh3rs/home-ops/commit/95901cae023ab8cea3041e74a75c3ce672c39736">95901ca</a>
+- <a href="https://github.com/j0sh3rs/home-ops/commit/9d57756195e065d0bd4ba88a4c1030aa26dc24d2">9d57756</a>
+- <a href="https://github.com/j0sh3rs/home-ops/commit/87fcb650d67fe1599644a46c0e6d11ede139d908">87fcb65</a>
+- <a href="https://github.com/j0sh3rs/home-ops/commit/687dbd8b4e4019197c1235fd1e183db83ea2e829">687dbd8</a>
+- <a href="https://github.com/j0sh3rs/home-ops/commit/4dcb1d4c2204ef7a35e3dd8155e65393712eda96">4dcb1d4</a>
+- <a href="https://github.com/j0sh3rs/home-ops/commit/f58a4e94b5daa8e247fb7c16eb54010b759f2a96">f58a4e9</a>
+- <a href="https://github.com/j0sh3rs/home-ops/commit/3a1f16d7629577ce9cb4f54f60efc01710395359">3a1f16d</a>
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
