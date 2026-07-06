@@ -4,17 +4,28 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/904d3ab39b43cd3d9f05e43f2a25d0400754a663">904d3ab</a>: fix(ai): archive claude-code — superseded by OpenCode
+- <a href="https://github.com/j0sh3rs/home-ops/commit/275e92537cf494f68ad032e7767a08872850ad95">275e925</a>: fix(drm-exporter): run privileged, EPERM persists with caps + root
 
-claude-code (headless engine daemon + runner Job template) has been
-disabled since 2026-06-16 (remote-control OAuth-only, never worked
-usefully in-cluster) and its successor Goose was itself dropped the
-same day the ai-stack was pruned. OpenCode covers the interactive
-coding-assistant role now. Moved to archive/claude-code/ for possible
-future reference; dropped the dangling app-template component ref
-(archived dirs aren't Flux-built) and the disabled-reference comment
-block in ai/kustomization.yaml.
-- <a href="https://github.com/j0sh3rs/home-ops/commit/2af48755d3313a43e17f7c38537f3527e6c700fc">2af4875</a>: fix(various): Rotate gh pat
+Reverting to chart defaults (root + PERFMON/SYS_RAWIO) fixed nothing —
+still "discovering DRM devices: Operation not permitted" on every node.
+Root cause: a hostPath bind mount of /dev/dri does not grant a cgroup
+device-access rule by itself; that only happens via `privileged: true`
+or a device plugin/DRA claim that injects the device node. This
+cluster's amd-gpu device-plugin is legacy-style (not DRA), so it can't
+back the chart's `dra.enabled` option for a non-privileged path.
+
+Verified live: patched the DaemonSet directly before writing this
+commit — all 4 pods went Running and /metrics serves real drm_* series
+(engine utilization, frequency, memory, info) on both an APU node and
+the dGPU node.
+- <a href="https://github.com/j0sh3rs/home-ops/commit/4f0b6b634bc211c654c645c61ec6abbaa8b6e6e2">4f0b6b6</a>: fix(drm-exporter): revert securityContext override causing EPERM crashloop
+
+The chart README claims AMD GPUs need neither PERFMON nor SYS_RAWIO and
+can run unprivileged, but that only holds for reading hwmon/sysfs stats
+after devices are discovered. DRM device discovery itself failed with
+EPERM on every node (including the dGPU node) once capabilities were
+dropped and the pod ran as a non-root user. Revert to the chart's
+default securityContext/podSecurityContext (root + PERFMON/SYS_RAWIO).
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>

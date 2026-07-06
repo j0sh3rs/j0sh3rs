@@ -4,10 +4,13 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/9e316ad068df6c1adf36bfb3ae1ba2021b65ea4f">9e316ad</a>: chore(velero): remove loop smoke-test validation comments (#457)
+- <a href="https://github.com/j0sh3rs/home-ops/commit/5e22bffd35246ca729dc40f885447ed8f3dfabad">5e22bff</a>: chore(ci): remove redundant mise upgrade workflow
 
-Cleanup of the cosmetic comments inserted by the n8n Loop Orchestrator
-end-to-end validation runs (issues #452, #454). No functional change.
+Renovate already tracks and upgrades mise-managed tool versions.
+The scheduled workflow was duplicating that coverage and failing on
+ephemeral k8s runners.
+
+Closes #496
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
