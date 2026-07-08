@@ -4,12 +4,12 @@
 
 Commits:
 
+- <a href="https://github.com/j0sh3rs/ai-skills/commit/dfbe7a53ccc1845a36a0ba2f4b5db8591b2271ee">dfbe7a5</a>
+- <a href="https://github.com/j0sh3rs/ai-skills/commit/82fe6308bddc3aaacea7f4e36c37d0086428e531">82fe630</a>
 - <a href="https://github.com/j0sh3rs/home-ops/commit/d1b770d4172344589d9f4b4b5ba44f04cdd22803">d1b770d</a>
+- <a href="https://github.com/j0sh3rs/ai-skills/commit/1af854b445b77fc15b3a2b725d86e279ea50438e">1af854b</a>
 - <a href="https://github.com/j0sh3rs/home-ops/commit/22ef296465344b3e6a549396bfc85eaefd296bb6">22ef296</a>
-- <a href="https://github.com/j0sh3rs/home-ops/commit/cc5a97ac1b8146ef9c91c16f5087d53ccb22902b">cc5a97a</a>
-- <a href="https://github.com/j0sh3rs/home-ops/commit/edf4f7caa4ceead156efbab9d7d1922487ce3123">edf4f7c</a>
-- <a href="https://github.com/j0sh3rs/home-ops/commit/835c11054315f0c4151ccb7f5d12db8735905a3b">835c110</a>
-- <a href="https://github.com/j0sh3rs/home-ops/commit/47b4857181ae2934699a40ff1edb083d092a905e">47b4857</a>
+- <a href="https://github.com/j0sh3rs/ai-skills/commit/1ef69ecf7f44c7af33e281fdabbc38ac238a446e">1ef69ec</a>
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
