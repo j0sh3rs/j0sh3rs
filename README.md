@@ -15,7 +15,7 @@ Platform/DevOps engineer and recovering EM who spends the workday optimizing oth
 When I'm not wrangling clusters: re-reading **Marvel** runs, yelling at a **soccer** match, or falling down an **existential-philosophy** rabbit hole and pretending I understand Heidegger.
 
 <!-- quote start -->
-> "Man is condemned to be free; because once thrown into the world, he is responsible for everything he does."
+> "Existence precedes essence."
 >
 > — *Jean-Paul Sartre*
 <!-- quote end -->
