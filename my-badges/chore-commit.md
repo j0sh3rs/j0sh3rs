@@ -4,13 +4,7 @@
 
 Commits:
 
-- <a href="https://github.com/j0sh3rs/home-ops/commit/5e22bffd35246ca729dc40f885447ed8f3dfabad">5e22bff</a>: chore(ci): remove redundant mise upgrade workflow
-
-Renovate already tracks and upgrades mise-managed tool versions.
-The scheduled workflow was duplicating that coverage and failing on
-ephemeral k8s runners.
-
-Closes #496
+- <a href="https://github.com/j0sh3rs/home-ops/commit/14b7107d496c31fe9d63adf93726869d5c536021">14b7107</a>: chore(llama-swap): persist whichllm probe Job (not Flux-managed, manual apply)
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
