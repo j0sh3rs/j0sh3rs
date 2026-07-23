@@ -1,94 +1,10 @@
 [
   {
-    "id": "a-commit",
-    "tier": 1,
-    "desc": "One of my commit sha starts with \"a\".",
-    "body": "- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/aa6edb81804501880295a9bc5f523f058f384b6c\"><strong>a</strong>a6edb81804501880295a9bc5f523f058f384b6c</a>",
-    "image": "https://my-badges.github.io/my-badges/a-commit.png"
-  },
-  {
-    "id": "ab-commit",
-    "tier": 2,
-    "desc": "One of my commit sha starts with \"ab\".",
-    "body": "- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/ab512a20ae2117d9595c50fd07686bba3d700f9b\"><strong>ab</strong>512a20ae2117d9595c50fd07686bba3d700f9b</a>",
-    "image": "https://my-badges.github.io/my-badges/ab-commit.png"
-  },
-  {
-    "id": "bad-words",
-    "tier": 0,
-    "desc": "I used a word \"fuck\" in my commit message.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/cdba79e4de15a8b158091ac0418ba3acf3124108\">cdba79e</a>: Fix up Deployment to bump coredns count, unfuck affinity\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/ebd6d1cf4bd739cb7166e8135a30f9f655885249\">ebd6d1c</a>: fucking secrets\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/090ae66a5719fd8a6cd9bc35d3113f9a07eee075\">090ae66</a>: Fuck youuuuuu\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/a76131e15aea0a3e0def59d78c1b39b05352d920\">a76131e</a>: Fuck it, go back to KPS+T w/ pdc\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/72299fef4c7e9574ac9baec5741783bc02cdeb10\">72299fe</a>: idk fuck it\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/da33de590a7f545c272e04034e552b71d6984685\">da33de5</a>: Fuck it idk\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/8282954a68dce63e275846949dd745a94b03dd51\">8282954</a>: Fuck it\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/be773cb3e1fcb85c4041674ed10e4584073ffa95\">be773cb</a>: Fuckit, lets go\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/6c51f75a3dbf370936c9cb2dbf6333068ec9928f\">6c51f75</a>: Disable it all. Fuck it\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/041749229e191a2f22e497f8126d6d039c591651\">0417492</a>: Fucking DERP\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/a608e61416bd8d8feef29244eb151e181e8d75d7\">a608e61</a>: Fucking fuck fuck\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/83462864888e49de8e5a8b5010e89f64bbd22f6d\">8346286</a>: Probably fucked this up real good",
-    "image": "https://my-badges.github.io/my-badges/bad-words.png"
-  },
-  {
-    "id": "chore-commit",
-    "tier": 0,
-    "desc": "I did a little housekeeping! 🧹",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/14b7107d496c31fe9d63adf93726869d5c536021\">14b7107</a>: chore(llama-swap): persist whichllm probe Job (not Flux-managed, manual apply)",
-    "image": "https://my-badges.github.io/my-badges/chore-commit.png"
-  },
-  {
     "id": "covid-19",
     "tier": 0,
     "desc": "I rolled before Covid-19: Survivor of the Great TP Shortage",
     "body": "",
     "image": "https://my-badges.github.io/my-badges/covid-19.png"
-  },
-  {
-    "id": "dead-commit",
-    "tier": 0,
-    "desc": "I pushed a commit with \"dead\" once.",
-    "body": "- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/ca7a1bd4582fca905164fa445a9cddead2e7fdcd\">ca7a1bd4582fca905164fa445a9cd<strong>dead</strong>2e7fdcd</a>",
-    "image": "https://my-badges.github.io/my-badges/dead-commit.png"
-  },
-  {
-    "id": "favorite-word",
-    "tier": 0,
-    "desc": "My favorite word is \"update\".",
-    "body": "My favorite commit message words are:\n\n1. update (used 954 times)\n2. add (used 455 times)\n3. merge (used 423 times)\n4. request (used 422 times)\n5. pull (used 413 times)",
-    "image": "https://my-badges.github.io/my-badges/favorite-word.png"
-  },
-  {
-    "id": "fix-2",
-    "tier": 1,
-    "desc": "I did 2 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/275e92537cf494f68ad032e7767a08872850ad95\">275e925</a>: fix(drm-exporter): run privileged, EPERM persists with caps + root\n\nReverting to chart defaults (root + PERFMON/SYS_RAWIO) fixed nothing —\nstill \"discovering DRM devices: Operation not permitted\" on every node.\nRoot cause: a hostPath bind mount of /dev/dri does not grant a cgroup\ndevice-access rule by itself; that only happens via `privileged: true`\nor a device plugin/DRA claim that injects the device node. This\ncluster's amd-gpu device-plugin is legacy-style (not DRA), so it can't\nback the chart's `dra.enabled` option for a non-privileged path.\n\nVerified live: patched the DaemonSet directly before writing this\ncommit — all 4 pods went Running and /metrics serves real drm_* series\n(engine utilization, frequency, memory, info) on both an APU node and\nthe dGPU node.\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/4f0b6b634bc211c654c645c61ec6abbaa8b6e6e2\">4f0b6b6</a>: fix(drm-exporter): revert securityContext override causing EPERM crashloop\n\nThe chart README claims AMD GPUs need neither PERFMON nor SYS_RAWIO and\ncan run unprivileged, but that only holds for reading hwmon/sysfs stats\nafter devices are discovered. DRM device discovery itself failed with\nEPERM on every node (including the dGPU node) once capabilities were\ndropped and the pod ran as a non-root user. Revert to the chart's\ndefault securityContext/podSecurityContext (root + PERFMON/SYS_RAWIO).",
-    "image": "https://my-badges.github.io/my-badges/fix-2.png"
-  },
-  {
-    "id": "fix-3",
-    "tier": 2,
-    "desc": "I did 3 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/89d6a99cdc339602e6d7a9529f0fe567fbb5a25c\">89d6a99</a>: fix(ai): remove unused Langfuse, ClickHouse, Goose, AnythingLLM, Open WebUI\n\nLangfuse never delivered a trace (S3 upload creds broken; 0 rows in\nPostgres); ClickHouse existed solely to back it. Goose's autonomous-loop\nexperiment (app, indexer, n8n dispatch wiring) is archived for possible\nreuse per request. AnythingLLM and Open WebUI removed after confirming\nneither has a real consumer beyond a chat UI that isn't used day to day.\n\nStrips dead LiteLLM Langfuse callback config/secrets, n8n's Goose-only\nRBAC/SA-token/webhook env vars, and fixes two dangling kustomize\nreferences (databases/clickhouse, flux/meta/repos/langfuse) that would\nhave broken `kustomize build`. All five removed apps copied to\narchive/ before deletion. Adds docs/runbooks/anythingllm-role-and-overlap.md\nrecording the removal rationale.\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/f05f938d289f7d1006d683c5a97cceb20bc0f7a5\">f05f938</a>: fix(omniroute): pin renovate regex to -web tag family\n\nPlain versioning=semver treated 3.8.42 as outranking 3.8.42-web (semver\nreads -web as a pre-release), so renovate silently downgraded to the\nnon-Playwright image and broke the web-cookie providers. Same fix\npattern as anythingllm's pg-* tag pin.\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9353a7323024c423ae405ae004cd4a94a259ca9f\">9353a73</a>: fix(omniroute): correct cliproxyapi image and add required config file\n\nghcr.io/router-for-me/cliproxyapi doesn't exist — OmniRoute's own\ndocker-compose.yml cites a stale/wrong image. Verified via upstream's own\nCI workflow (docker-image.yml): the real publish target is Docker Hub\neceasy/cli-proxy-api, same source, official multi-arch build.\n\nAlso: this binary has no PORT/HOST env support at all (verified via\ncmd/server/main.go + internal/config/config.go) — config is file-only,\nand LoadConfigOptional hard-errors on startup if config.yaml is missing.\nAdded it as a mounted secret key (host/port/auth-dir/api-keys/management\nkey), matching upstream's own reference docker-compose.yml volume mount.\nDropped the dead PORT/HOST env vars.",
-    "image": "https://my-badges.github.io/my-badges/fix-3.png"
-  },
-  {
-    "id": "fix-4",
-    "tier": 3,
-    "desc": "I did 4 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/285c3e579b38d88ff585cdf60bcef9a4a4eecb96\">285c3e5</a>: fix(ai): move qwen3-1.7b to swap group, free 1.4GiB VRAM for Qwen3.6-27B\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/e3b215f42fc9a14cddf25e4c0e5ae9181e081513\">e3b215f</a>: fix(ai): raise memory limit to 16Gi, reduce qwen3.6-27b ctx to 8192 to fit VRAM\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/d1059fc0d3f6271f95904faa5038febf09416484\">d1059fc</a>: fix(ai): revert to Vulkan v230-b9803 (ROCm slower on 9070 XT, bandwidth-bound)\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/0b175478419426443b8f88762d7aaf0879f9b591\">0b17547</a>: fix(ai): switch to ROCm b9803 for gfx1201 (9070 XT), test qwen35 arch support",
-    "image": "https://my-badges.github.io/my-badges/fix-4.png"
-  },
-  {
-    "id": "fix-5",
-    "tier": 4,
-    "desc": "I did 5 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/77e78a676b83ab94bc90743a39a13d24c5bb5130\">77e78a6</a>: fix(omega-mcp): bump to 1.5.4-r5 (MAC-independent license fingerprint)\n\nPicks up the sitecustomize.py uuid.getnode() pin from\nj0sh3rs/containers (commit 2dc0ccb). Also reverts the hostNetwork\nstopgap from the manifest (fix A) now that the image-side fix (B)\nhandles the fingerprint. Stable hostname retained.\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a4925144c24cccfa29b801e2206fd4e45ad0120c\">a492514</a>: fix(omega-mcp): hostNetwork to stabilize license MAC fingerprint\n\nThe OMEGA Pro license fingerprint includes uuid.getnode() (the pod\neth0 MAC). Cilium 1.19 assigns a random MAC per pod and has no static\nMAC annotation, so the fingerprint changed every rollout and the\npro_tools init gate failed (CrashLoopBackOff) even after a successful\nomega activate. Run on the host network so uuid.getnode() resolves the\nnode's stable NIC MAC; the pod is already node-pinned via openebs RWO.\n\nStopgap (fix A). Clean fix (B) is a sitecustomize.py in the\nj0sh3rs/containers omega-mcp image pinning uuid.getnode() from\ndevice_id; revert hostNetwork once that -r5 image ships.\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/003afbdcf2498d0dc40909f18345dfc07658f1c1\">003afbd</a>: fix(omega-mcp): pin stable pod hostname for license fingerprint\n\nOMEGA Pro license is machine-fingerprint bound and the vendor wheel\ncomputes the fingerprint from the pod hostname. On a Deployment the\nhostname defaults to the random pod name, so every rollout produced a\nnew fingerprint and the pro_tools init gate failed (init-omega exit 1\n-> CrashLoopBackOff) even after a successful 'omega activate'. Pin\nhostname=omega-mcp so one activation persists across rollouts.\n\nNode identity was never the cause: openebs-hostpath RWO already pins\nthe pod to bee-jms-01.\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/46ccc9c8c5faa89d5304dbc621d7a1eb375141be\">46ccc9c</a>: fix(ai): omega-mcp renovate tag fix to keep the build portion of release\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/4f3e6b7c00f3f6d3283de322d9237e730d79a964\">4f3e6b7</a>: fix(omega): Bump omega to proper r version with pro fixes\"\n\"",
-    "image": "https://my-badges.github.io/my-badges/fix-5.png"
-  },
-  {
-    "id": "fix-6",
-    "tier": 5,
-    "desc": "I did 6 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/6be4c6f7151ecbfbc08cf2882e263a5b32e10adf\">6be4c6f</a>: fix(kelos): correct mcpjungle port, add cross-ns netpol, fix renovate annotation (#484)\n\n- AgentConfig mcpjungle URLs: port 3000 → 8080 (confirmed via kubectl get svc)\n- NetworkPolicy allow-kelos-to-mcpjungle in ai ns: permits kelos-system\n  Task pods to reach mcpjungle:8080 (Cilium blocks cross-ns by default)\n- helmrelease.yaml opencodeImage renovate annotation: datasource=docker\n  depName=ghcr.io/kelos-dev/opencode (was tracking wrong chart releases)\n\nCloses #468\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9f4c41fbeed7800361f7f75b112a6888ee4c28e8\">9f4c41f</a>: fix(litellm): scope cache to embeddings, add github-fallback/retries/concurrency cap (#483)\n\nImplements #466 — LiteLLM proxy_config hardening from the 2026-06-29\nAI-stack config review.\n\nCaching:\n- Restrict cache_params.supported_call_types to embedding/rerank only.\n  Chat completions were cached at 600s TTL, serving stale answers to\n  coding agents (a 0.9-similar prompt with a 1-line diff returned the\n  wrong cached output).\n- Documented that REDIS_URL already targets DB 4 (cache isolation\n  VERIFY item from the issue — confirmed via keyspace, no fix needed).\n\nRouting / resilience:\n- num_retries: 1 — absorb transient llama-swap cold-swap 5xx.\n- timeout: 300 (router) + request_timeout: 300 (client-facing) — wedged\n  swaps become clean timeouts instead of indefinite hangs.\n- fallbacks: local-coder/-heavy/-balanced/-reason/-large -> github-fallback\n  (free GitHub Models tier) for Vulkan-segfault / OOM hard-failure\n  degradation. Keeps coding agents alive WITHOUT spending Anthropic credit;\n  free-tier 150 req/day cap makes this a crash cushion, not a routine route.\n- context_window_fallbacks: local-coder/local-reason -> local-large (24k).\n  github-fallback is NOT eligible (8k input cap < the 16k ceiling we are\n  escaping). Prompts beyond 24k hard-fail 400 by design — no cloud spend\n  on oversized repo dumps.\n\nNew model:\n- github-fallback -> github/gpt-4o-mini, api_key os.environ/GITHUB_TOKEN\n  (injected via environmentSecrets). max_input_tokens 8000, 5 concurrent\n  to match free-tier limits.\n  VERIFY: GITHUB_TOKEN needs `models:read` scope or these 403.\n\nConcurrency:\n- max_parallel_requests: 2 on each local-* deployment — guards the single\n  16 GiB GPU. Resident embed/rerank left uncapped (batch RAG, no swap).\n\nVerified: kustomize build, yamllint, embedded config.yaml parse.\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/09fad4a215c93e8151c1ac8309bad4981ab76de3\">09fad4a</a>: fix(ai): Add Perplexity and GH to litellm\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a3a12b0ba8790cbe766b630df7d823f1fdb6ced5\">a3a12b0</a>: fix(llama-swap): raise HelmRelease timeout to 30m for cold model fetch (#482)\n\nThe #474 upgrade failed and rolled back: the model-fetch init container\nneeds to download the new Q3_K_S coder GGUF (~13.7G) off HuggingFace, but\nthe Helm default 5m timeout tripped first ('timeout waiting for:\nDeployment status InProgress', 4 attempts -> Stalled -> rollback to v61).\nThe reloader-managed ConfigMap still updated to reference Q3_K_S, leaving\na split brain: running pod served a config pointing at a file the rolled-\nback deployment never finished downloading -> agentic-coder load 500s ->\nKelos/OpenCode agents hang on local-coder.\n\nSet spec.timeout: 30m so a cold multi-model fetch (up to ~60 GiB) can\ncomplete within the Helm window instead of failing the release.\n\nRefs #465, #470\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/47b4857181ae2934699a40ff1edb083d092a905e\">47b4857</a>: fix(llama-swap): de-thrash chat group — coder Q3_K_S + router always-on (#474)\n\nActually implements the #465 de-thrash that was closed without landing\n(the prior change moved qwen3-1.7b the WRONG way — into swap — to fit\nQwen3.6-27B). On-node bench (bigboi, image b9803, 16k ctx, q8_0 KV,\nFA on) settled the tradeoff:\n\n  agentic-coder Q3_K_M: 15.6 GB VRAM, 148 tok/s gen, 253 prefill\n  agentic-coder Q3_K_S: 14.19 GB VRAM, 152 tok/s gen, 233 prefill\n\nGen speed is a wash; Q3_K_S frees ~1.4 GB. Total GPU is 17.1 GB, and the\nalways-on group needs ~2.6 GB (embed+rerank+router/voice). Only Q3_K_S\nfits the coder resident alongside it (14.19+2.6=16.8 < 17.1); Q3_K_M did\nnot (15.6+2.6=18.2), which is why router/voice calls evicted the coder.\n\nChanges:\n- agentic-coder: Q3_K_M -> Q3_K_S (configmap cmd + init-container fetch\n  URL/filename + min-bytes guard 14.5G->13.3G).\n- qwen3-1.7b: moved OUT of exclusive 'chat' group, INTO persistent\n  'always-on' (now embed+rerank+qwen3-1.7b). Routing, opencode\n  small_model title-gen, and Home Assistant voice no longer evict the\n  resident coder.\n- litellm: add local-coder-heavy -> qwen3.6-27b. Higher coding quality\n  (SWE-bench Verified 77.2) but dense 27B = slow decode (~20-30 vs MoE\n  ~150 tok/s); for hard one-shot/visual escalation, not the default loop.\n  llama.cpp #22384 hybrid checkpoint fix confirmed present in b9803.\n- fix stale comments (always-on ~3->2.6 GiB; local-coder Q3_K_M->Q3_K_S).\n\nVerified: kustomize build (both apps) OK; flux-manifest-reviewer pass\n(filename consistency, group integrity, fetch guard, alias targets).\n\nCloses #465\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/3608ea0a4d108e201114143db6b1894f411688fa\">3608ea0</a>: fix(litellm): add max_input_tokens + context_window_fallbacks for all tight-ctx models",
-    "image": "https://my-badges.github.io/my-badges/fix-6.png"
-  },
-  {
-    "id": "fix-6+",
-    "tier": 6,
-    "desc": "I did 10 sequential fixes.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/fb07e727943b3f3df9b1735cbade44b72bd8de89\">fb07e72</a>: fix(opencode): remove OPENCODE_SERVER_PASSWORD from secret (basic auth disabled)\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9c7cb96202c282318305a3139df8820d26b5893c\">9c7cb96</a>: fix(opencode): drop basic auth, switch to external gateway + Cloudflare tunnel\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c152349d5786c53a670429d65d77a6c28b1ad62b\">c152349</a>: fix(opencode): providers -> provider (singular) in config.json\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/6d029e064090fd2c55cd70fb3f2a9754b9c56c14\">6d029e0</a>: fix(opencode): correct image tag to 1.17.11 (no v prefix)\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/30e3a6a32db5b288dbff76d68bd05d0ba53dbe99\">30e3a6a</a>: fix(opencode): correct image tag scheme (anomalyco uses 1.0.X not v1.17.X)\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/d001f2a1b171ad055d8d82fee7ce060e02be78c7\">d001f2a</a>: fix(opencode): correct init container config copy path\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/42e37ca39c8421ed3570da9df2c7015632f398dc\">42e37ca</a>: fix(opencode): remove inline volumeMounts from initContainer (app-template v4)\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/ca974e16ca00fe81aa4225257129bbb8572aa546\">ca974e1</a>: fix(kelos): remove AgentConfig fields not in v1alpha2 schema\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/793c2f258908c436ec19ce161d13fd65a8d8b7b2\">793c2f2</a>: fix(kelos): enable crds.install via chart values not Flux crds field\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/77fba31cac5933a77b6e356f4981a9c923e44697\">77fba31</a>: fix(kelos): use source.toolkit.fluxcd.io/v1 for OCIRepository",
-    "image": "https://my-badges.github.io/my-badges/fix-6+.png"
   },
   {
     "id": "github-anniversary-5",
@@ -105,20 +21,6 @@
     "image": "https://my-badges.github.io/my-badges/github-anniversary-10.png"
   },
   {
-    "id": "mass-delete-commit",
-    "tier": 1,
-    "desc": "When I delete code, I delete a lot.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9321e467fcda3eb1faa1b027cb62d520e6383d82\">9321e46</a>",
-    "image": "https://my-badges.github.io/my-badges/mass-delete-commit.png"
-  },
-  {
-    "id": "mass-delete-commit-10k",
-    "tier": 2,
-    "desc": "When I delete code, I delete a lot.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9321e467fcda3eb1faa1b027cb62d520e6383d82\">9321e46</a>",
-    "image": "https://my-badges.github.io/my-badges/mass-delete-commit-10k.png"
-  },
-  {
     "id": "polite-coder",
     "tier": 0,
     "desc": "I am a polite coder.",
@@ -131,97 +33,6 @@
     "desc": "I have participated in pull requests with 5 or more people",
     "body": "Pull requests:\n\n- <a href=\"https://github.com/voxpupuli/puppet-archive/pull/421\">#421</a>: Add initial support for gsutil and pulling from Google Storage buckets",
     "image": "https://my-badges.github.io/my-badges/pr-collaboration-5.png"
-  },
-  {
-    "id": "spooky-commit",
-    "tier": 0,
-    "desc": "I committed on the Halloween! Boo!",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e7d7a122bfdd91a6d0d82ad476f858f0750c257c\">e7d7a12</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/eeb9e5db53a21df634c481aafde4fed0915232d2\">eeb9e5d</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/f4f536d01132aa14c502cac536452f9ac776faf8\">f4f536d</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/9775d0f551629a84c97f9e27101bf2a3eb062f5a\">9775d0f</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/bcd866e14f7841ead47dc2492fbc0f411e11cf55\">bcd866e</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/bdc563460e7d7c2aece12b98de2f5ab7d4bffb73\">bdc5634</a>",
-    "image": "https://my-badges.github.io/my-badges/spooky-commit.png"
-  },
-  {
-    "id": "evening-commits",
-    "tier": 0,
-    "desc": "I commit in the evening.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/ai-skills/commit/dfbe7a53ccc1845a36a0ba2f4b5db8591b2271ee\">dfbe7a5</a>\n- <a href=\"https://github.com/j0sh3rs/ai-skills/commit/82fe6308bddc3aaacea7f4e36c37d0086428e531\">82fe630</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/d1b770d4172344589d9f4b4b5ba44f04cdd22803\">d1b770d</a>\n- <a href=\"https://github.com/j0sh3rs/ai-skills/commit/1af854b445b77fc15b3a2b725d86e279ea50438e\">1af854b</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/22ef296465344b3e6a549396bfc85eaefd296bb6\">22ef296</a>\n- <a href=\"https://github.com/j0sh3rs/ai-skills/commit/1ef69ecf7f44c7af33e281fdabbc38ac238a446e\">1ef69ec</a>",
-    "image": "https://my-badges.github.io/my-badges/evening-commits.png"
-  },
-  {
-    "id": "midnight-commits",
-    "tier": 0,
-    "desc": "I commit at midnight.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/5e3a1caf0ad5d20ed8195af7af2d15ec1ae75849\">5e3a1ca</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/26670e0855b462cf2dda919cc407392c7ac30a8e\">26670e0</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/b3623b85af7709a0064e5ddc00148db3418c7a85\">b3623b8</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/36e95f8b1e66297cb72c9dc6398a69b802bd1fcc\">36e95f8</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/34a2bccb6816af26e1c7f6c2d02761ea1e0ffc21\">34a2bcc</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e4fb06df7043d177a99711fd8dc55e9f92e64bfb\">e4fb06d</a>",
-    "image": "https://my-badges.github.io/my-badges/midnight-commits.png"
-  },
-  {
-    "id": "friday-13",
-    "tier": 0,
-    "desc": "I committed on Friday the 13th, One… By One…",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/j0sh3rs/commit/bf6ed90cbda47569e42721186953c53490d277e9\">bf6ed90</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/5e1865395cd1828db36a2ecf20f0f9bae022afa2\">5e18653</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/8169e2fa70f6b44cf74a9fec2f2a837ba213033e\">8169e2f</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e5c47866a0d1241882078a832ee735ce492f0d80\">e5c4786</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/21f5399704eb49426e3c781190b8a4ac5b885087\">21f5399</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/514e43fe8af4ebf945a4f19c748da90f889cee38\">514e43f</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/283cee4cf0f980327b6e40eec1b3729dd00a395b\">283cee4</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/661966aafbcfbb4a74217f6cc024e8c0474f1725\">661966a</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/02fa4035ec81989d4b06345bc35ed4737d2f879c\">02fa403</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/111e6e471d5dbfe3b2cdcd96db3a2c877d29e4fb\">111e6e4</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e196d35793dd96b3d1a6a73ec13c363df5041d15\">e196d35</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/9201264e68f7f1dc49fe5d2e59ed0ac787bc60a1\">9201264</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/29793c718b5fca157a8000985d767b3ffa03f566\">29793c7</a>",
-    "image": "https://my-badges.github.io/my-badges/friday-13.png"
-  },
-  {
-    "id": "summer-solstice-commits",
-    "tier": 0,
-    "desc": "I commit in the Summer solstice.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/a7b362dd7523bcb9caba091775f7297cbab38e1d\">a7b362d</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/b4490af3af7dca3b2cd42c2520a6c6b9c87d844c\">b4490af</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/a05ffa4ff065b4334e78a5b4f970878e3860a323\">a05ffa4</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/a893064b69b03ca4ac0bcdbb33d67d021bbfd663\">a893064</a>",
-    "image": "https://my-badges.github.io/my-badges/summer-solstice-commits.png"
-  },
-  {
-    "id": "programmers-day",
-    "tier": 0,
-    "desc": "Happy Programmers Day! I committed on a 256 Day of Year!",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/9d9400d808c4cedaf014f914493c56581f7b0c25\">9d9400d</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e7489353e879d56565e93e895b48ae39098883e9\">e748935</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/56524e245f2e31b3a522bd4fe46b592b156b3989\">56524e2</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/c7faddecd05cec8015d9aa473ea8d7c09d646c91\">c7fadde</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/03c029bdcfa5ab93b0d42394c030c1f224d010eb\">03c029b</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/56a074470120845dc87a47192eb174a54056b40b\">56a0744</a>",
-    "image": "https://my-badges.github.io/my-badges/programmers-day.png"
-  },
-  {
-    "id": "may-the-4th",
-    "tier": 0,
-    "desc": "May the 4th be with you!",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/5a77dc90f14372e44be04ba0d4e3a83d13bfecb4\">5a77dc9</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/7c4f3d3a60da6c42bebb9d575883e7a1df0757c9\">7c4f3d3</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/bbcb6bfba4e8849064a04b9d5f981b7161459e0c\">bbcb6bf</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/058248fdd02ab07a14c539d65b537252a44f2848\">058248f</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/af9b845db79eec70f46e9d076b8adeee57cef873\">af9b845</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/ae921d57669cf4fb29617ed4020816d0d6058fda\">ae921d5</a>",
-    "image": "https://my-badges.github.io/my-badges/may-the-4th.png"
-  },
-  {
-    "id": "pi-day",
-    "tier": 0,
-    "desc": "Happy March 14th! I committed on a Pi Day!",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/1d30be6689bb330a569c2206417407ae58f16f83\">1d30be6</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/580b63f2bacbd35547b85d39ad5731554a5fded2\">580b63f</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/2ab224351ff3b8ba9cc72e402a30f66ed3646bfb\">2ab2243</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/56f35fdfa4494a08ab66f3143f1e1e3681ab51e7\">56f35fd</a>",
-    "image": "https://my-badges.github.io/my-badges/pi-day.png"
-  },
-  {
-    "id": "alien-day",
-    "tier": 0,
-    "desc": "I committed on the day when the crew of the USCSS Nostromo made their fateful landing and discovered the Xenomorph on LV-426!",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/zed_backup/commit/6f1fcb65fef7a56720e1bfb1788a381497a695ea\">6f1fcb6</a>\n- <a href=\"https://github.com/j0sh3rs/zed_backup/commit/b8871740d37c73ca3bed68958b1927910955f5f7\">b887174</a>\n- <a href=\"https://github.com/j0sh3rs/control-repo/commit/08bb46bc5bac199466014b89298bfd4dffd1b873\">08bb46b</a>\n- <a href=\"https://github.com/j0sh3rs/control-repo/commit/5a8e05641d65b375c0cd9210c2fb1613679f2d10\">5a8e056</a>\n- <a href=\"https://github.com/j0sh3rs/control-repo/commit/b33749be9f9df6a745e1198ed99ba2c472c7cb22\">b33749b</a>\n- <a href=\"https://github.com/j0sh3rs/control-repo/commit/eb209cd4bbc171e72b826d392e65746fee348536\">eb209cd</a>",
-    "image": "https://my-badges.github.io/my-badges/alien-day.png"
-  },
-  {
-    "id": "science-fiction-day",
-    "tier": 0,
-    "desc": "I committed on Isaac Asimov's birthday / National Science Fiction Day!",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/2c4900d8b415c7347bff2470e7d1181a310beb2a\">2c4900d</a>\n- <a href=\"https://github.com/j0sh3rs/k3s-at-home/commit/e1c24d0bc96adfae77da7af9c9f9162568679efd\">e1c24d0</a>",
-    "image": "https://my-badges.github.io/my-badges/science-fiction-day.png"
-  },
-  {
-    "id": "cafe-commit",
-    "tier": 0,
-    "desc": "I pushed a commit with \"cafe\" once.",
-    "body": "- <a href=\"https://github.com/j0sh3rs/home-ops/commit/11f14332e8148eff8b08cf7e075dd746fcafe68c\">11f14332e8148eff8b08cf7e075dd746f<strong>cafe</strong>68c</a>",
-    "image": "https://my-badges.github.io/my-badges/cafe-commit.png"
-  },
-  {
-    "id": "epic-commit",
-    "tier": 0,
-    "desc": "I made an epic commit with a message over 500 chars.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/ai-skills/commit/aa1e04ea5bf2b19f1f44d0d5bdb0af36998fc056\">aa1e04e</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/22ef296465344b3e6a549396bfc85eaefd296bb6\">22ef296</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/cc5a97ac1b8146ef9c91c16f5087d53ccb22902b\">cc5a97a</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/edf4f7caa4ceead156efbab9d7d1922487ce3123\">edf4f7c</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/275e92537cf494f68ad032e7767a08872850ad95\">275e925</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/56298ce896f44ec21d2d17fdb96b5a67dd70d4d6\">56298ce</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/fc96a3829ebee931289b1c4f39f31ed45b7722f5\">fc96a38</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/3b533ad7ef3b1b21353ca086796d38044314655c\">3b533ad</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/904d3ab39b43cd3d9f05e43f2a25d0400754a663\">904d3ab</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/78efa135ec72a5b69ab2725c20e0cc18d9e643bb\">78efa13</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/89d6a99cdc339602e6d7a9529f0fe567fbb5a25c\">89d6a99</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9353a7323024c423ae405ae004cd4a94a259ca9f\">9353a73</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c268c4f16255824265658977958e028a75cdbeac\">c268c4f</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/835c11054315f0c4151ccb7f5d12db8735905a3b\">835c110</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/0bdda4c282b3b6c7b5b7da98e5614a6fa089af18\">0bdda4c</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/57314069dd416ebad58a6582a320759d7381b464\">5731406</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/dcd4cd435b9f9a4192dbd057bc2ca12b1e54f895\">dcd4cd4</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9f4c41fbeed7800361f7f75b112a6888ee4c28e8\">9f4c41f</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a3a12b0ba8790cbe766b630df7d823f1fdb6ced5\">a3a12b0</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/47b4857181ae2934699a40ff1edb083d092a905e\">47b4857</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/8f85f9f9b9aec30c47d43d58e05123c39fb98b1c\">8f85f9f</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/ce6ebc0d6bce671543841246526a9b7a6c8405f1\">ce6ebc0</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/bcd315cdb7ed59307b6a427d14ced268f0fc2a1f\">bcd315c</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/b2b1451e276957f4308fc2b1c3ceba225745f5c9\">b2b1451</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/63ea8a625d56d2e1f5c94918e39ee71d55b76357\">63ea8a6</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/5d3ec6a8cb160b0e71719b00ea570ef99be77339\">5d3ec6a</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/027997a7903c90c3f102020d77f1ef9391f67b86\">027997a</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a4925144c24cccfa29b801e2206fd4e45ad0120c\">a492514</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/003afbdcf2498d0dc40909f18345dfc07658f1c1\">003afbd</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/8f3ebf7a7cab3b48d84d8ea582a338c27594f204\">8f3ebf7</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/539fd6eafddd7b390f8d59dbac9ed195c320f10d\">539fd6e</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/8a03f88dca6ca3a2a1d0e8de19f9d98aec97ee8c\">8a03f88</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/2764c8925ddcd145d73a27f1b8e4626a3b231068\">2764c89</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/7574fdaa3956adb9238ee24c04243d075d3b2ffa\">7574fda</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a4c83db9536c522a392bc9dbcf70e74b07d211f7\">a4c83db</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/b79d5389e5834de80b155b98294bb74daf26ac0c\">b79d538</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/60602269a525417cdaa753773ed76891473cc287\">6060226</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/66d216bfca9d3e6349647546ddcd7dd30793cb9a\">66d216b</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/42a238e5b588ecf4fb9c47128a6eb257da92dcb7\">42a238e</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/7a504fe24ce27b014a513bd7977e2c37d69ec0c0\">7a504fe</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/8296e78cbe4e1a393e2cf0ba901be121e5321aa7\">8296e78</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/af16b3e4c84ace6b3bdc90817ce3d7d021b798ad\">af16b3e</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/475014c6d8d30e3c025eddb93f9820ea956c28bb\">475014c</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/b089cfbb911b574350d4311f7b505c008d0b67f6\">b089cfb</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9f26bd8b325bab92b9ce92f618ea3e72c28220ef\">9f26bd8</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c3ab4ec25180483858e0ae3e49a093c9f7693792\">c3ab4ec</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/31bcaf71fa21d56e1749cba2841dcfd5075d9b48\">31bcaf7</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/bf4c7cf7b0d5fd40b3ff34fca95615ebaaaa73bd\">bf4c7cf</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/abdf4bde9521269a79f372ac3e6e42b6fc4640aa\">abdf4bd</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/1903e0a177119b581e2b671160a9cb56002d4c5a\">1903e0a</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a2d113ea01c65c82bc0e5854c49b055430e5577d\">a2d113e</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/959dfe9fc887419084c0639799589c5af62ac114\">959dfe9</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/bb20c6ce905a64f4ca0a7d05efc9feec45707bdc\">bb20c6c</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/d087373ef6b51374578d60f2a56e798d0c82d645\">d087373</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/be18cedbcd33c21b418f5961cbbaccc4fd6fadaf\">be18ced</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/b76b26f176aa6115e89a74f6f5ab891aa8e5e7de\">b76b26f</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/3a8f9e8abb9bf206f50c220171ef80c833bf2b4b\">3a8f9e8</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/199bc1ca197db4b255fa75c6da2ab8fe914eb55d\">199bc1c</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/2be2f4577557d26c8711b6d38c47fb7369ee44ec\">2be2f45</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/6571582c664e5724a4fc1b4009ed07702138fb41\">6571582</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9321e467fcda3eb1faa1b027cb62d520e6383d82\">9321e46</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/df8b9334165b3dc9069c7a618815642f1d179a25\">df8b933</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/4a49a051cc1bb8f23dbb5d2c791ccdbb96052a6a\">4a49a05</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/b014e3dffc4c3dbe9f76113230d76dee8e7559b5\">b014e3d</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/7d49d6dcd4d67615a0417f12f69fb7ef8c1387fe\">7d49d6d</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/627a8d4e5287bd6d087306cded72727a3340a0ab\">627a8d4</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/dc944fb902e6746b21730a403deca90891e15a41\">dc944fb</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c9178672f6a852c051a0e74c92dabf9758aaa7d6\">c917867</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/35fb2dab6758099de71a68d41c7a85763e9fa479\">35fb2da</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/60bdfbbe7c5781d08de12c13e80373b00f1841ed\">60bdfbb</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/3e635020340d4da89e0c44211867c3a56ded4e5a\">3e63502</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9be941b85965037b322486320bb9e15da80f1937\">9be941b</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/7f0126115d6baa74da68fdd17831536cd719feec\">7f01261</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/7a576babf1d31a5d42a0c9cc1d18553ee04b90a1\">7a576ba</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/83a86a43db596854c3cca9ebbbd0ddf13ca9cc42\">83a86a4</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/312dc1aee902b5d2ea84ca195bf9f4ca73c21bd5\">312dc1a</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/a41ed0144dffb7146a84bbe3ef3f671bb98d1cf6\">a41ed01</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/99abfba2c7596e39e430c14adbc1250d2aedb007\">99abfba</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/c4cfe2160bf633bb0aa97b077fa9acb9b92c2ef1\">c4cfe21</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/50bf3fdc546904f3805cb605eff7635ce1018207\">50bf3fd</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/78b68834b255d1d197253f47bf50a4729d36b4ef\">78b6883</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/8b28e7b5dc88a7fa882be34f85636026c5b42eaa\">8b28e7b</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/b826e16be0ce4c4f2b65892ad60f18adc5e67310\">b826e16</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/62e760b7f1ec0590acf06cafda0ea230baff8b96\">62e760b</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/51a20e7d67b42376ed2602dca9577910546a8c72\">51a20e7</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/eb087052f46f89fc703604bc9face1ec774f4987\">eb08705</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/1ece0747a3a10a119c21c994d90bd4c73912262c\">1ece074</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/190a0f87ecf22743a7430382845b941f3a274f86\">190a0f8</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/fe35b432e36df15f577fee90abd0799ff3141eae\">fe35b43</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/0f0ba6f5dc4637a084d8a99e26bca6d0b770c875\">0f0ba6f</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/17165045d6a3b48e847d202ffc5bddce13e14691\">1716504</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/4bd4fedee3b901b40c039bcb83990a0ff82e4d41\">4bd4fed</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/d5b13934b4d3b86eacda1c8d98147ac4d847d465\">d5b1393</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/19fe8b8f6621fab5d88d1b61880cacd9ca700c56\">19fe8b8</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/629cbc5d287f7d70282e41f9137364f97dd55bf8\">629cbc5</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/76f7999502b7c4e8dbdf7d09183d2192519b84d5\">76f7999</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/5a77dc90f14372e44be04ba0d4e3a83d13bfecb4\">5a77dc9</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/7c4f3d3a60da6c42bebb9d575883e7a1df0757c9\">7c4f3d3</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/bbcb6bfba4e8849064a04b9d5f981b7161459e0c\">bbcb6bf</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/058248fdd02ab07a14c539d65b537252a44f2848\">058248f</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/af9b845db79eec70f46e9d076b8adeee57cef873\">af9b845</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/ae921d57669cf4fb29617ed4020816d0d6058fda\">ae921d5</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/2c944167ca43ea32006a68bd46794298f7c0da11\">2c94416</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/e2fa06b7f035a51e89fe651623d73b6c88d03109\">e2fa06b</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9c0e13db4edf574e303f1e722de0f0a143ded92e\">9c0e13d</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/d86aed7ae29e91396ad7882391858281b51fbf1a\">d86aed7</a>",
-    "image": "https://my-badges.github.io/my-badges/epic-commit.png"
-  },
-  {
-    "id": "cosmetic-commit",
-    "tier": 0,
-    "desc": "I made cosmetic commit.",
-    "body": "Commits:\n\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/9e316ad068df6c1adf36bfb3ae1ba2021b65ea4f\">9e316ad</a>\n- <a href=\"https://github.com/j0sh3rs/home-ops/commit/83a86a43db596854c3cca9ebbbd0ddf13ca9cc42\">83a86a4</a>",
-    "image": "https://my-badges.github.io/my-badges/cosmetic-commit.png"
   },
   {
     "id": "public-keys-3",
