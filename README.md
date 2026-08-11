@@ -15,7 +15,7 @@ Platform/DevOps engineer and recovering EM who spends the workday optimizing oth
 When I'm not wrangling clusters: re-reading **Marvel** runs, yelling at a **soccer** match, or falling down an **existential-philosophy** rabbit hole and pretending I understand Heidegger.
 
 <!-- quote start -->
-> "If a lion could talk, we could not understand him."
+> "A picture held us captive. And we could not get outside it."
 >
 > — *Ludwig Wittgenstein*
 <!-- quote end -->
