@@ -15,7 +15,7 @@ Platform/DevOps engineer and recovering EM who spends the workday optimizing oth
 When I'm not wrangling clusters: re-reading **Marvel** runs, yelling at a **soccer** match, or falling down an **existential-philosophy** rabbit hole and pretending I understand Heidegger.
 
 <!-- quote start -->
-> "To understand a text is to come to understand oneself in a kind of dialogue."
+> "It is the tyranny of hidden prejudices that makes us deaf to what speaks to us in tradition."
 >
 > — *Hans-Georg Gadamer*
 <!-- quote end -->
