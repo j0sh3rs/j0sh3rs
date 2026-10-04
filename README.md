@@ -15,7 +15,7 @@ Platform/DevOps engineer and recovering EM who spends the workday optimizing oth
 When I'm not wrangling clusters: re-reading **Marvel** runs, yelling at a **soccer** match, or falling down an **existential-philosophy** rabbit hole and pretending I understand Heidegger.
 
 <!-- quote start -->
-> "One must imagine Sisyphus happy."
+> "In the depth of winter, I finally learned that within me there lay an invincible summer."
 >
 > — *Albert Camus*
 <!-- quote end -->
