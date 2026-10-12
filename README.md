@@ -15,9 +15,9 @@ Platform/DevOps engineer and recovering EM who spends the workday optimizing oth
 When I'm not wrangling clusters: re-reading **Marvel** runs, yelling at a **soccer** match, or falling down an **existential-philosophy** rabbit hole and pretending I understand Heidegger.
 
 <!-- quote start -->
-> "The meaning of a word is its use in the language."
+> "Everyone is the other and no one is himself."
 >
-> — *Ludwig Wittgenstein*
+> — *Martin Heidegger*
 <!-- quote end -->
 
 ## 🎯 What I'm into
