@@ -15,7 +15,7 @@ Platform/DevOps engineer and recovering EM who spends the workday optimizing oth
 When I'm not wrangling clusters: re-reading **Marvel** runs, yelling at a **soccer** match, or falling down an **existential-philosophy** rabbit hole and pretending I understand Heidegger.
 
 <!-- quote start -->
-> "Every man is born as many men and dies as a single one."
+> "The most thought-provoking thing is that we are still not thinking."
 >
 > — *Martin Heidegger*
 <!-- quote end -->
