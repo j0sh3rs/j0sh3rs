@@ -9,6 +9,7 @@ Pull requests:
 - <a href="https://github.com/j0sh3rs/home-ops/pull/811">#811</a>: feat: add VPA (Vertical Pod Autoscaler) components
 - <a href="https://github.com/j0sh3rs/home-ops/pull/812">#812</a>: fix: wire VPA into kube-system and tune oMLX agent sampling
 - <a href="https://github.com/j0sh3rs/home-ops/pull/899">#899</a>: feat(ai): local Hindsight (gpt-oss-20b on oMLX) and Wyoming voice bridge
+- <a href="https://github.com/j0sh3rs/bollard/pull/36">#36</a>: feat(traefik): Add record deletions to clean up upon traefik shutdown
 
 
 Created by <a href="https://github.com/my-badges/my-badges">My Badges</a>
