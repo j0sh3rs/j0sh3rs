@@ -15,7 +15,7 @@ Platform/DevOps engineer and recovering EM who spends the workday optimizing oth
 When I'm not wrangling clusters: re-reading **Marvel** runs, yelling at a **soccer** match, or falling down an **existential-philosophy** rabbit hole and pretending I understand Heidegger.
 
 <!-- quote start -->
-> "Understanding is never a subjective relation to a given object, but belongs to the effective history of what is understood."
+> "All understanding is interpretation, and all interpretation takes place in the medium of a language."
 >
 > — *Hans-Georg Gadamer*
 <!-- quote end -->
